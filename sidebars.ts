@@ -92,10 +92,14 @@ const sidebars: SidebarsConfig = {
       label: 'API Reference',
       link: {
         type: 'generated-index',
-        description: 'Referência completa da API da xCloud Platform (em desenvolvimento)',
+        description: 'Referência completa da API da xCloud Platform',
       },
       items: [
-        // Placeholder - será expandido futuramente
+        'api/introduction',
+        'api/authentication',
+        'api/projects',
+        'api/deployments',
+        'api/data-models',
       ],
     },
     {
