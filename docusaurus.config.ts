@@ -81,6 +81,20 @@ const config: Config = {
     colorMode: {
       respectPrefersColorScheme: true,
     },
+    // Algolia DocSearch configuration
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'DQ9ZR0P0U9',
+      // Public API key: it is safe to commit it
+      apiKey: '72b8acb874beb5ff1b2f769e1328b7e4',
+      indexName: 'pagecloudv1_xcloud-docs',
+      // Optional: see doc section below
+      contextualSearch: true,
+      // Optional: Algolia search parameters
+      searchParameters: {},
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+    },
     navbar: {
       title: 'xCloud Platform Documentation',
       logo: {
