@@ -1,0 +1,95 @@
+name: '🤖 Gemini Docs Issue Solver'
+
+on:
+  workflow_call:
+    inputs:
+      issue-number:
+        description: 'The issue number to solve'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  solve_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Mint identity token'
+        id: 'mint_identity_token'
+        uses: 'actions/create-github-app-token@v1'
+        with:
+          app-id: '${{ vars.APP_ID }}'
+          private-key: '${{ secrets.APP_PRIVATE_KEY }}'
+
+      - name: 'Run Gemini CLI to Solve Issue'
+        uses: 'google-github-actions/run-gemini-cli@v0'
+        id: 'gemini_solve'
+        with:
+          github_token: '${{ steps.mint_identity_token.outputs.token }}'
+          gemini_api_key: '${{ secrets.GEMINI_API_KEY }}'
+          settings: |-
+            {
+              "mcpServers": {
+                "github": {
+                  "command": "docker",
+                  "args": [
+                    "run", "-i", "--rm",
+                    "-e", "GITHUB_PERSONAL_ACCESS_TOKEN",
+                    "ghcr.io/github/github-mcp-server"
+                  ],
+                  "includeTools": [
+                    "get_issue",
+                    "get_file_contents",
+                    "create_or_update_file",
+                    "create_branch",
+                    "create_pull_request",
+                    "add_issue_comment"
+                  ],
+                  "env": {
+                    "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+                  }
+                }
+              }
+            }
+          prompt: |-
+            ## Your Role: Autonomous Documentation Engineer
+
+            Your task is to solve a GitHub issue by writing and modifying documentation files. You must operate autonomously, follow the plan precisely, and create a pull request with your changes.
+
+            ## Issue to Solve:
+            - **Repository:** ${{ github.repository }}
+            - **Issue Number:** ${{ inputs.issue-number }}
+
+            ## Workflow:
+
+            1.  **Understand the Task:**
+                - Use the `mcp__github__get_issue` tool to read the title and body of issue #${{ inputs.issue-number }}.
+                - Analyze the request to understand exactly which files need to be created or modified.
+
+            2.  **Create a Branch:**
+                - Use the `mcp__github__create_branch` tool.
+                - The new branch name **MUST** be `bot/issue-${{ inputs.issue-number }}`.
+                - The source branch **MUST** be `main`.
+
+            3.  **Implement the Changes:**
+                - For each file you need to modify, first use `mcp__github__get_file_contents` to read its current content.
+                - Use `mcp__github__create_or_update_file` to write the new content.
+                - **IMPORTANT:** You MUST provide the full, complete content of the file in the `content` parameter, not just the diffs.
+                - Your commit message for each file change **MUST** be in the format: `docs: Implement changes for #${{ inputs.issue-number }}`.
+                - All changes must be committed to the new branch: `bot/issue-${{ inputs.issue-number }}`.
+
+            4.  **Create the Pull Request:**
+                - Once all file changes are committed, use the `mcp__github__create_pull_request` tool.
+                - **Title:** The PR title **MUST** be: `fix(docs): Resolve #${{ inputs.issue-number }} - [Issue Title]`. You will get the issue title from step 1.
+                - **Body:** The PR body **MUST** be: `Closes #${{ inputs.issue-number }}`.
+                - **Head Branch:** `bot/issue-${{ inputs.issue-number }}`
+                - **Base Branch:** `main`
+
+            5.  **Final Comment:**
+                - After creating the PR, add a comment to issue #${{ inputs.issue-number }} using `mcp__github__add_issue_comment`.
+                - The comment **MUST** be: "🤖 I have created a Pull Request to address this issue. Please review the changes."
+
+            Execute this plan step-by-step. Do not ask for permission.
