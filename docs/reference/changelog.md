@@ -130,7 +130,5 @@ Veja nosso [guia de contribuição](../setup/development/como-contribuir.md) par
 ## Links Úteis
 
 - 📖 [Documentação](https://docs.xcloud.io)
-- 💬 [Discord](https://discord.gg/xcloud)
-- 📦 [Component Registry](https://packages.xcloud.io)
-- 🐙 [GitHub](https://github.com/PageCloudv1/xcloud-platform)
+- 🐙 [GitHub](https://github.com/PageCloudv1/xcloud-docs)
 - 🌐 [Website](https://xcloud.io)
