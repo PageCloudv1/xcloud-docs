@@ -97,7 +97,7 @@ gh secret set REACT_APP_API_BASE_URL --repo PageCloudv1/xcloud-dashboard
 ## 🔑 **Where to Get Secret Values**
 
 ### **🤖 AI & Automation**
-- **GEMINI_API_KEY**: <https://aistudio.google.com/app/apikey>
+- **GEMINI_API_KEY**: [Google AI Studio](https://aistudio.google.com/app/apikey)
 
 ### **📦 Package Management**
 - **NPM_TOKEN**: `npm adduser && npm token create`
@@ -178,8 +178,8 @@ echo "your_secret_value" | gh secret set SECRET_NAME --org PageCloudv1 --visibil
 
 ## 📚 **Additional Resources**
 
-- **GitHub Secrets Documentation**: <https://docs.github.com/en/actions/security-guides/encrypted-secrets>
-- **GitHub CLI Manual**: <https://cli.github.com/manual/gh_secret>
+- **GitHub Secrets Documentation**: [GitHub Docs](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+- **GitHub CLI Manual**: [GitHub CLI](https://cli.github.com/manual/gh_secret)
 - **xCloud Architecture**: [arquitetura.md](../../architecture/arquitetura.md)
 - **Contributing Guide**: [como-contribuir.md](../development/como-contribuir.md)
 

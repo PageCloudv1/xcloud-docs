@@ -214,9 +214,9 @@ gh secret list --org PageCloudv1 | grep GEMINI_API_KEY
 
 ## 📚 **Documentation Links**
 
-- **GitHub Secrets**: <https://docs.github.com/en/actions/security-guides/encrypted-secrets>
-- **GitHub CLI Secrets**: <https://cli.github.com/manual/gh_secret>
-- **Organization Secrets**: <https://docs.github.com/en/organizations/managing-programmatic-access-to-your-organization/managing-requests-for-personal-access-tokens-in-your-organization>
+- **GitHub Secrets**: [Encrypted Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+- **GitHub CLI Secrets**: [GitHub CLI Manual](https://cli.github.com/manual/gh_secret)
+- **Organization Secrets**: [Managing Access Tokens](https://docs.github.com/en/organizations/managing-programmatic-access-to-your-organization/managing-requests-for-personal-access-tokens-in-your-organization)
 
 ## ⚠️ **Security Best Practices**
 

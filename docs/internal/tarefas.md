@@ -675,6 +675,4 @@ Quando uma tarefa for completada:
 
 ---
 
-**Last Updated**: {{ date }}  
-**Version**: 1.0.0  
 **Maintained by**: PageCloudv1 DevOps Team

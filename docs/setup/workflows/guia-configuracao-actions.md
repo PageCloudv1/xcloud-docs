@@ -497,7 +497,7 @@ Configurar métricas para:
 
 After implementation, monitor:
 - **Build Success Rate**: >95%
-- **Average Build Time**: <10 minutes
+- **Average Build Time**: &lt;10 minutos
 - **Deployment Frequency**: Daily (staging), Weekly (production)
 - **Security Scan Coverage**: 100% of PRs
 - **Test Coverage**: >80% across all repositories

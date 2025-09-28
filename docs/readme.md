@@ -17,25 +17,25 @@ Documentação completa da **xCloud Platform** - Uma plataforma de computação 
 ## 📖 **Estrutura da Documentação**
 
 ### **🔧 Setup & Configuração**
-- **[GitHub Secrets](setup/github-secrets/)** - Configuração de secrets para automações
-- **[Workflows](setup/workflows/)** - Setup de GitHub Actions e CI/CD
-- **[Development](setup/development/)** - Ambiente de desenvolvimento
+- **[GitHub Secrets](setup/github-secrets/readme.md)** - Configuração de secrets para automações
+- **[Workflows](setup/workflows/readme.md)** - Setup de GitHub Actions e CI/CD
+- **[Development](setup/development/readme.md)** - Ambiente de desenvolvimento
 
 ### **📖 Guias**
-- **[Testing](guides-testing/)** - Testes locais e automação
-- **[Migration](guides/migration/)** - Guias de migração tecnológica
+- **[Testing](guides/testing/readme.md)** - Testes locais e automação
+- **[Migration](guides/migration/readme.md)** - Guias de migração tecnológica
 
 ### **🏗️ Arquitetura**
-- **[Architecture](architecture/)** - Documentação de arquitetura
+- **[Architecture](architecture/readme.md)** - Documentação de arquitetura
 - **[Project Structure](architecture/estrutura-do-projeto.md)** - Estrutura do projeto
 - **[Components Architecture](architecture/arquitetura-de-componentes.md)** - Arquitetura de componentes
 
 ### **🛠️ Scripts & Templates**
-- **[Scripts](scripts/)** - Scripts de automação e setup
-- **[Templates](templates/)** - Templates e arquivos de exemplo
+- **[Scripts](scripts/readme.md)** - Scripts de automação e setup
+- **[Templates](templates/readme.md)** - Templates e arquivos de exemplo
 
 ### **📋 Referência**
-- **[Reference](reference/)** - Documentação de referência
+- **[Reference](reference/readme.md)** - Documentação de referência
 - **[Security](reference/seguranca.md)** - Políticas de segurança
 - **[Changelog](reference/changelog.md)** - Histórico de mudanças
 
