@@ -2,19 +2,19 @@
 
 ## 📚 Table of Contents
 
-1. [System Architecture](#️-system-architecture)
-2. [Platform Structure](#-platform-structure)
-3. [Core Components](#-core-components)
-4. [Serverless Runtime](#-deployment-event-flow)
-5. [Edge Computing](#-security-architecture)
-6. [Build & Deploy Pipeline](#-deployment-architecture)
-7. [Template System](#-development-workflow)
-8. [Component Marketplace](#-component-marketplace)
-9. [Security Architecture](#-security-architecture)
-10. [Deployment Architecture](#-deployment-architecture)
-11. [Development Workflow](#-development-workflow)
+1. [System Architecture](#system-architecture)
+2. [Platform Structure](#platform-structure)
+3. [Core Components](#core-components)
+4. [Serverless Runtime](#deployment-event-flow)
+5. [Edge Computing](#security-architecture)
+6. [Build & Deploy Pipeline](#deployment-architecture)
+7. [Template System](#development-workflow)
 
-## 🏗️ System Architecture
+9. [Security Architecture](#security-architecture)
+10. [Deployment Architecture](#deployment-architecture)
+11. [Development Workflow](#development-workflow)
+
+## System Architecture
 
 ### High-Level Overview
 
@@ -92,7 +92,7 @@ graph TB
     T --> BB
 ```
 
-## 📁 Platform Structure
+## Platform Structure
 
 ### Core Platform Structure
 
@@ -217,7 +217,7 @@ my-nextjs-app/                          # User's project
 └── README.md                             # Project documentation
 ```
 
-## 🔧 Core Components
+## Core Components
 
 ### 1. Build Pipeline
 
@@ -295,7 +295,7 @@ class EventBus:
             await asyncio.gather(*tasks)
 ```
 
-## 🔄 Deployment Event Flow
+## Deployment Event Flow
 
 ### Event Flow Diagram
 
@@ -354,7 +354,7 @@ class Events:
     PROJECT_DELETED = "project:deleted"
 ```
 
-## 🔐 Security Architecture
+## Security Architecture
 
 ### Security Layers
 
@@ -386,7 +386,7 @@ Build & Runtime Security:
   - Dependency scanning (Snyk/Dependabot)
 ```
 
-## 🚀 Deployment Architecture
+## Deployment Architecture
 
 ### Production Deployment
 
@@ -441,7 +441,7 @@ RUN pip install -e .
 CMD ["uvicorn", "xcloud.server.app:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-## 💻 Development Workflow
+## Development Workflow
 
 ### Contributing Workflow
 

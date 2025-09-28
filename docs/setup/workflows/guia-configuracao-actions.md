@@ -24,7 +24,7 @@ Este guia detalha a configuração completa dos GitHub Actions para a organizaç
 
 ### 1. 🏢 Organization-Level Settings
 
-**Acesse**: <https://github.com/organizations/PageCloudv1/settings/actions>
+**Acesse**: [https://github.com/organizations/PageCloudv1/settings/actions](https://github.com/organizations/PageCloudv1/settings/actions)
 
 #### General Policies
 
@@ -502,7 +502,7 @@ Configurar métricas para:
 ## 🛠️ Manual Configuration Steps
 
 1. **Organization Settings**
-   - Go to <https://github.com/organizations/PageCloudv1/settings/actions>
+   - Go to [https://github.com/organizations/PageCloudv1/settings/actions](https://github.com/organizations/PageCloudv1/settings/actions)
    - Configure permissions and policies
    - Setup required status checks
 

@@ -6,7 +6,7 @@ Obrigado pelo interesse em contribuir com a xCloud Platform! Este documento forn
 
 - [Código de Conduta](#-código-de-conduta)
 - [Como Contribuir](#-como-contribuir)
-- [Configuração do Ambiente](#-configuração-do-ambiente)
+- [Configuração do Ambiente](#️-configuração-do-ambiente)
 - [Processo de Desenvolvimento](#-processo-de-desenvolvimento)
 - [Padrões de Código](#-padrões-de-código)
 - [Testes](#-testes)

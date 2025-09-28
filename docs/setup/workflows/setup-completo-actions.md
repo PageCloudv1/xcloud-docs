@@ -113,7 +113,7 @@ git push origin main
 
 ### 2. Configurar Secrets na Organização
 
-Acesse <https://github.com/organizations/PageCloudv1/settings/secrets/actions>
+Acesse [https://github.com/organizations/PageCloudv1/settings/secrets/actions](https://github.com/organizations/PageCloudv1/settings/secrets/actions)
 
 **Secrets Obrigatórios:**
 

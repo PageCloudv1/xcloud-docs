@@ -20,7 +20,7 @@ Apenas as versões mais recentes dos nossos componentes recebem atualizações d
 
 Para vulnerabilidades críticas ou sensíveis, use nosso canal privado:
 
-- **Email**: <security@xcloud.io>
+- **Email**: [security@xcloud.io](mailto:security@xcloud.io)
 - **Assunto**: `[SECURITY] Descrição breve da vulnerabilidade`
 
 ### GitHub Security Advisories
@@ -203,11 +203,11 @@ Se você suspeita que seu projeto na xCloud foi comprometido:
 1. **Rotacione imediatamente** todas as credenciais e variáveis de ambiente no seu projeto.
 2. **Revogue** os tokens de acesso da xCloud que possam ter sido expostos.
 3. **Revise** os logs de acesso e de deploy para identificar atividades não autorizadas.
-4. **Contate-nos** em <security@xcloud.io> com os detalhes.
+4. **Contate-nos** em [security@xcloud.io](mailto:security@xcloud.io) com os detalhes.
 
 ## 📞 Contatos de Segurança
 
-- **Email Principal**: <security@xcloud.io>
+- **Email Principal**: [security@xcloud.io](mailto:security@xcloud.io)
 - **Canal de Emergência**: Para incidentes críticos em andamento, contate a equipe no Discord (@SecurityTeam).
 
 ---

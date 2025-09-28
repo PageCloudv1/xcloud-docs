@@ -12,7 +12,7 @@
 2. [System Architecture](#️-system-architecture)
 3. [Component Categories](#-package-categories)
 4. [Free vs Paid Resources](#-free-vs-paid-packages)
-5. [Registry Infrastructure](#-registry-infrastructure)
+5. [Registry Infrastructure](#-deployment-architecture)
 6. [Authentication & Authorization](#-authentication--authorization)
 7. [Payment System](#-payment-system)
 8. [CLI Integration](#-cli-integration)

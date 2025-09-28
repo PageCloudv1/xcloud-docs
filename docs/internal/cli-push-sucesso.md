@@ -29,9 +29,9 @@
 
 ### 🔗 **Links Ativos:**
 
-- **GitHub Repo**: <https://github.com/PageCloudv1/xcloud-cli>
-- **Actions**: <https://github.com/PageCloudv1/xcloud-cli/actions>
-- **Workflows**: <https://github.com/PageCloudv1/xcloud-cli/tree/main/.github/workflows>
+- **GitHub Repo**: [https://github.com/PageCloudv1/xcloud-cli](https://github.com/PageCloudv1/xcloud-cli)
+- **Actions**: [https://github.com/PageCloudv1/xcloud-cli/actions](https://github.com/PageCloudv1/xcloud-cli/actions)
+- **Workflows**: [https://github.com/PageCloudv1/xcloud-cli/tree/main/.github/workflows](https://github.com/PageCloudv1/xcloud-cli/tree/main/.github/workflows)
 
 ### 📋 **Commits Realizados:**
 
@@ -87,9 +87,9 @@ GITHUB_TOKEN           # Automático (já disponível)
 
 **Como obter GEMINI_API_KEY:**
 
-1. Acesse: <https://aistudio.google.com/apikey>
+1. Acesse: [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
 2. Crie nova API key
-3. Adicione em: <https://github.com/organizations/PageCloudv1/settings/secrets/actions>
+3. Adicione em: [https://github.com/organizations/PageCloudv1/settings/secrets/actions](https://github.com/organizations/PageCloudv1/settings/secrets/actions)
 
 ### 🎯 **Próximos Passos Sugeridos:**
 

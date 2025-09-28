@@ -235,7 +235,7 @@ Quer se juntar à nossa lista? Há muitas formas:
 
 Para questões sobre contribuições:
 
-- **Email**: <contributors@xcloud.io>
+- **Email**: [contributors@xcloud.io](mailto:contributors@xcloud.io)
 - **Discord**: #contributors channel
 - **GitHub**: [@PageCloudv1/contributors](https://github.com/orgs/PageCloudv1/teams/contributors)
 

@@ -78,7 +78,7 @@ Este Código de Conduta aplica-se tanto em espaços do projeto quanto em espaço
 
 Instâncias de comportamento abusivo, de assédio ou de outra forma inaceitável podem ser reportadas contatando a equipe de moderação:
 
-- **Email**: <conduct@xcloud.io>
+- **Email**: [conduct@xcloud.io](mailto:conduct@xcloud.io)
 - **Discord**: Mensagem privada para um membro com o cargo `@Moderator`.
 - **Formulário anônimo**: [Reportar Conduta](https://xcloud.io/conduct-report)
 
