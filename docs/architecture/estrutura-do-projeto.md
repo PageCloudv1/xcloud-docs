@@ -113,22 +113,26 @@ xcloud-platform/
 ## 🚀 Quick Start
 
 ### Installation
+
 ```bash
 npm install -g xcloud-cli
 ```
 
 ### Create Project
+
 ```bash
 xcloud init my-app --template react
 cd my-app
 ```
 
 ### Development
+
 ```bash
 xcloud dev
 ```
 
 ### Deploy
+
 ```bash
 xcloud deploy --prod
 ```
@@ -168,22 +172,26 @@ xcloud component add @ui/button # Add component
 ## 📈 Supported Technologies
 
 ### Frontend Frameworks
+
 - React, Vue.js, Next.js, Nuxt.js
 - Svelte, SvelteKit, Angular
 - Static HTML/CSS/JS
 
 ### Backend Frameworks  
+
 - FastAPI, Flask, Django (Python)
 - Express, NestJS (Node.js)
 - Gin, Echo (Go)
 - Spring Boot (Java)
 
 ### Databases
+
 - PostgreSQL, MySQL, MongoDB
 - Redis, DynamoDB
 - Supabase, PlanetScale
 
 ### Services
+
 - Stripe, Auth0, SendGrid
 - AWS, GCP, Azure integrations
 - Podman, Kubernetes support

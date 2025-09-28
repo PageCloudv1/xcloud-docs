@@ -100,7 +100,7 @@ xcloud domains add www.meusite.com
 
 ### Funções Serverless
 
-1.  Crie uma função na pasta `api/`:
+1. Crie uma função na pasta `api/`:
 
     ```javascript
     // api/hello.js
@@ -110,7 +110,7 @@ xcloud domains add www.meusite.com
     }
     ```
 
-2.  Faça o deploy com `xcloud`. A função estará disponível em `/api/hello`.
+2. Faça o deploy com `xcloud`. A função estará disponível em `/api/hello`.
 
 ### Variáveis de Ambiente
 
@@ -171,6 +171,7 @@ xcloud component add <name>    # Adicionar um componente ao projeto
 ### Problemas Comuns
 
 **Problema**: Build falha.
+
 ```bash
 # Verifique os logs do build
 xcloud logs <url-do-deploy-com-falha>
@@ -180,6 +181,7 @@ npm run build
 ```
 
 **Problema**: Dependências não são instaladas corretamente.
+
 ```bash
 # Remova node_modules e reinstale
 rm -rf node_modules && npm install

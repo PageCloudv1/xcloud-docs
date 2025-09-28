@@ -8,22 +8,26 @@
 
 ## 📚 Table of Contents
 
-1. [Overview](#overview)
-2. [System Architecture](#system-architecture)
-3. [Component Categories](#component-categories)
-4. [Free vs Paid Resources](#free-vs-paid-resources)
-5. [Registry Infrastructure](#registry-infrastructure)
-6. [Authentication & Authorization](#authentication--authorization)
-7. [Payment System](#payment-system)
-8. [CLI Integration](#cli-integration)
-9. [Marketplace Frontend](#marketplace-frontend)
-10. [Developer Experience](#developer-experience)
-11. [API Specification](#api-specification)
-12. [Deployment Architecture](#deployment-architecture)
+1. [Overview](#-overview)
+2. [System Architecture](#️-system-architecture)
+3. [Component Categories](#-package-categories)
+4. [Free vs Paid Resources](#-free-vs-paid-packages)
+5. [Registry Infrastructure](#-registry-infrastructure)
+6. [Authentication & Authorization](#-authentication--authorization)
+7. [Payment System](#-payment-system)
+8. [CLI Integration](#-cli-integration)
+9. [Marketplace Frontend](#-marketplace-frontend)
+10. [Developer Experience](#-developer-experience)
+11. [API Specification](#-api-specification)
+12. [Deployment Architecture](#-deployment-architecture)
 
 ## 🎯 Overview
 
-**xcloud-components** is a comprehensive marketplace ecosystem for the xCloud Platform, similar to npm but specialized for web development templates, UI components, serverless functions, APIs, and integrations. It provides a marketplace where developers can publish, discover, and monetize development resources.
+**xcloud-components** is a comprehensive marketplace ecosystem for the xCloud
+Platform, similar to npm but specialized for web development templates, UI
+components, serverless functions, APIs, and integrations. It provides a
+marketplace where developers can publish, discover, and monetize development
+resources.
 
 > **MODERN DEVELOPMENT PLATFORM**  
 > The xCloud Components registry is a modern, cloud-native platform  
@@ -133,48 +137,60 @@ graph TB
 ## 📋 Package Categories
 
 ### 1. 🌐 Web Templates
+
 Complete web application templates ready to deploy.
 
 **Examples:**
+
 - `@xcloud/react-dashboard` - Admin dashboard with charts and tables
 - `@community/nextjs-blog` - SEO-friendly blog template
 - `@pro/saas-boilerplate` - Full-featured SaaS starter kit (Paid)
 
 ### 2. 🎨 UI Components
+
 Reusable frontend components for various frameworks.
 
 **Examples:**
+
 - `@xcloud/tailwind-ui-kit` - Collection of Tailwind CSS components
 - `@community/react-charts` - Interactive charts for React
 - `@pro/vue-datagrid` - Advanced data grid for Vue.js (Paid)
 
 ### 3. ⚡ Serverless Functions
+
 Backend logic snippets that can be deployed instantly.
 
 **Examples:**
+
 - `@xcloud/image-resizer` - On-the-fly image resizing
 - `@community/form-handler` - Email submission for static sites
 - `@pro/stripe-payment` - Secure payment processing function (Paid)
 
 ### 4. 🔌 Integrations
+
 Connectors for third-party services and APIs.
 
 **Examples:**
+
 - `@xcloud/supabase-auth` - Supabase authentication helper
 - `@community/sendgrid-mailer` - Send emails via SendGrid
 - `@enterprise/salesforce-sync` - Salesforce data synchronization (Enterprise)
 
 ### 5. 🗃️ Database Connectors
+
 Plugins for easy database integration.
 
 **Examples:**
+
 - `@community/planetscale-driver` - PlanetScale serverless driver
 - `@pro/mongodb-atlas-connector` - Optimized connector for MongoDB Atlas (Paid)
 
 ### 6. 🤖 AI/ML Models
+
 Pre-trained models and AI services for applications.
 
 **Examples:**
+
 - `@xcloud/basic-chatbot` - Simple chatbot function
 - `@pro/sentiment-analyzer` - Market sentiment analysis API (Paid)
 - `@enterprise/custom-vision-model` - Professional computer vision models (Enterprise)
@@ -184,24 +200,28 @@ Pre-trained models and AI services for applications.
 ### Package Tiers
 
 #### 🆓 Free Tier
+
 - **Cost**: Free
 - **Features**: Basic functionality, community support
 - **Limits**: Rate limiting, basic features only
 - **Examples**: Basic UI components, simple functions
 
 #### 💎 Pro Tier
+
 - **Cost**: $9.99 - $99.99 one-time or $4.99 - $19.99/month
 - **Features**: Advanced functionality, priority support
 - **Limits**: Higher rate limits, premium features
 - **Examples**: Advanced templates, professional components
 
 #### 🏢 Enterprise Tier
+
 - **Cost**: $99.99 - $999.99/month
 - **Features**: Full functionality, dedicated support, SLA
 - **Limits**: No limits, white-label options
 - **Examples**: Institutional-grade integrations, custom solutions
 
 #### 🌟 Community Tier
+
 - **Cost**: Pay-what-you-want or donations
 - **Features**: Community-driven packages
 - **Limits**: Varies by package
@@ -310,6 +330,7 @@ xcloud wallet balance
 ### Package Configuration
 
 ```json
+```json
 // xcloud-package.json
 {
   "name": "@myorg/awesome-dashboard",
@@ -362,6 +383,7 @@ xcloud wallet balance
 ### Package Page Example
 
 ```
+```bash
 ┌─────────────────────────────────────────────────────┐
 │ @pro/saas-boilerplate                      ★ 4.9/5 │
 │ Professional Next.js SaaS Boilerplate               │
@@ -391,12 +413,14 @@ xcloud wallet balance
 ### Publishing Workflow
 
 1. **Create Package**
+
 ```bash
 xcloud create package --name my-dashboard --category template
 cd my-dashboard
 ```
 
 2. **Develop & Test**
+
 ```bash
 xcloud test
 xcloud lint
@@ -404,11 +428,13 @@ xcloud build
 ```
 
 3. **Configure Pricing**
+
 ```bash
 xcloud config pricing --tier pro --monthly 19.99
 ```
 
 4. **Publish**
+
 ```bash
 xcloud publish --dry-run  # Test publishing
 xcloud publish            # Publish to registry
@@ -608,4 +634,7 @@ spec:
 └──────────────────────────────────────────────────────┘
 ```
 
-This architecture creates a comprehensive ecosystem where developers can monetize their web development expertise while users get access to professional-grade tools and templates. The system scales from individual developers to enterprise customers, with proper categorization for maximum flexibility.
+This architecture creates a comprehensive ecosystem where developers can monetize
+their web development expertise while users get access to professional-grade
+tools and templates. The system scales from individual developers to enterprise
+customers, with proper categorization for maximum flexibility.

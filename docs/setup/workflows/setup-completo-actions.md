@@ -4,7 +4,7 @@
 
 Todos os workflows foram criados com sucesso para os 8 repositórios da organização PageCloudv1:
 
-### 📦 Repositórios com CI/CD Configurado:
+### 📦 Repositórios com CI/CD Configurado
 
 1. **xcloud-platform** - ⭐ Repositório principal
    - Workflow: `.github/workflows/ci.yml`
@@ -113,9 +113,10 @@ git push origin main
 
 ### 2. Configurar Secrets na Organização
 
-Acesse https://github.com/organizations/PageCloudv1/settings/secrets/actions
+Acesse <https://github.com/organizations/PageCloudv1/settings/secrets/actions>
 
 **Secrets Obrigatórios:**
+
 - `PYPI_TOKEN` - Token para publicação no PyPI
 - `CONTAINER_REGISTRY_USERNAME` - Username do Container Registry
 - `CONTAINER_REGISTRY_TOKEN` - Token do Container Registry
@@ -123,6 +124,7 @@ Acesse https://github.com/organizations/PageCloudv1/settings/secrets/actions
 - `NETLIFY_SITE_ID` - ID do site Netlify
 
 **Secrets Opcionais:**
+
 - `NPM_TOKEN` - Para publicação de componentes React
 - `ALGOLIA_APP_ID` - Para indexação de busca na documentação  
 - `ALGOLIA_ADMIN_API_KEY` - API key do Algolia
@@ -140,6 +142,7 @@ Acesse https://github.com/organizations/PageCloudv1/settings/secrets/actions
 ### 4. Ativar GitHub Pages
 
 Para repositórios com deploy de documentação:
+
 - xcloud-dashboard → Settings → Pages → Deploy from GitHub Actions
 - xcloud-docs → Settings → Pages → Deploy from GitHub Actions  
 - xcloud-components → Settings → Pages → Deploy from GitHub Actions (Storybook)
@@ -164,12 +167,14 @@ Include administrators: ✅
 ### Workflow Permissions
 
 Em cada repositório → Settings → Actions → General:
+
 - Workflow permissions: "Read and write permissions"
 - Allow GitHub Actions to create/approve pull requests: ✅
 
 ### Auto-merge Configuration
 
 Para dependabot e renovate:
+
 ```yaml
 # .github/workflows/auto-merge.yml
 name: Auto-merge dependency updates
@@ -191,10 +196,12 @@ jobs:
 ## 📊 Monitoramento e Métricas
 
 ### Workflow Analytics
+
 - Acesse cada repo → Actions → Insights
 - Monitore success rate, duration, costs
 
 ### Notification Setup
+
 ```yaml
 # .github/workflows/notify.yml - Adicionar em workflows críticos
 - name: Notify on failure
@@ -206,6 +213,7 @@ jobs:
 ```
 
 ### Cost Optimization
+
 - Use `if` conditions para evitar builds desnecessários
 - Cache dependencies agressivamente
 - Use matrix strategy com `fail-fast: false`
@@ -213,7 +221,7 @@ jobs:
 
 ## 🚨 Troubleshooting
 
-### Problemas Comuns:
+### Problemas Comuns
 
 1. **Podman não inicia** → Verificar se Podman Desktop está rodando
 2. **Act timeout** → Aumentar timeout com `act --timeout 10m`

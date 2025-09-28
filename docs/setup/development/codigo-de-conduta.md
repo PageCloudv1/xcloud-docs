@@ -7,21 +7,25 @@ No interesse de promover um ambiente aberto e acolhedor, nós, como contribuidor
 ## Nossos Valores
 
 ### 🤝 Colaboração
+
 - Trabalhamos juntos para alcançar objetivos comuns.
 - Valorizamos diferentes perspectivas e experiências.
 - Apoiamos uns aos outros no aprendizado e crescimento.
 
 ### 🎯 Excelência
+
 - Buscamos sempre melhorar nosso código, documentação e plataforma.
 - Compartilhamos conhecimento e melhores práticas.
 - Incentivamos inovação responsável.
 
 ### 🌍 Inclusão
+
 - Criamos um espaço seguro para todos participarem.
 - Respeitamos diferentes backgrounds técnicos e culturais.
 - Promovemos diversidade em todas as suas formas.
 
 ### 🔒 Integridade
+
 - Somos honestos e transparentes em nossas comunicações.
 - Respeitamos propriedade intelectual e licenças.
 - Mantemos a confidencialidade quando apropriado.
@@ -54,6 +58,7 @@ No interesse de promover um ambiente aberto e acolhedor, nós, como contribuidor
 Os mantenedores do projeto são responsáveis por esclarecer os padrões de comportamento aceitável e devem tomar ações corretivas apropriadas e justas em resposta a qualquer instância de comportamento inaceitável.
 
 Os mantenedores têm o direito e a responsabilidade de:
+
 - Remover, editar ou rejeitar comentários, commits, código, edições de wiki, issues e outras contribuições que não estejam alinhadas com este Código de Conduta.
 - Banir temporária ou permanentemente qualquer contribuidor por comportamentos que considerem inadequados, ameaçadores, ofensivos ou prejudiciais.
 
@@ -73,7 +78,7 @@ Este Código de Conduta aplica-se tanto em espaços do projeto quanto em espaço
 
 Instâncias de comportamento abusivo, de assédio ou de outra forma inaceitável podem ser reportadas contatando a equipe de moderação:
 
-- **Email**: conduct@xcloud.io
+- **Email**: <conduct@xcloud.io>
 - **Discord**: Mensagem privada para um membro com o cargo `@Moderator`.
 - **Formulário anônimo**: [Reportar Conduta](https://xcloud.io/conduct-report)
 
@@ -85,10 +90,10 @@ Todos os relatórios serão revisados e investigados prontamente e de forma just
 
 Dependendo da gravidade da violação, as consequências podem incluir:
 
-1.  **Advertência**: Uma conversa privada sobre o comportamento.
-2.  **Advertência Formal**: Um aviso formal, com consequências para comportamento continuado.
-3.  **Suspensão Temporária**: Proibição temporária de participar de qualquer aspecto da comunidade.
-4.  **Banimento Permanente**: Remoção permanente da comunidade.
+1. **Advertência**: Uma conversa privada sobre o comportamento.
+2. **Advertência Formal**: Um aviso formal, com consequências para comportamento continuado.
+3. **Suspensão Temporária**: Proibição temporária de participar de qualquer aspecto da comunidade.
+4. **Banimento Permanente**: Remoção permanente da comunidade.
 
 ## Reconhecimento
 

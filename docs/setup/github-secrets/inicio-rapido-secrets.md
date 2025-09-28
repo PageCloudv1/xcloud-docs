@@ -7,12 +7,14 @@ Este guia irá configurar todos os **GitHub Secrets** necessários para a **Page
 ## 🎯 **What Will Be Configured**
 
 ### **Organization-Level Secrets:**
+
 - 🤖 **AI Automation**: GEMINI_API_KEY para reviews inteligentes
 - 📦 **Package Publishing**: NPM_TOKEN, GHCR_TOKEN
 - 🚀 **Deployments**: NETLIFY_AUTH_TOKEN, Container Registry tokens
 - 🔒 **Security**: CODECOV_TOKEN, SONARCLOUD_TOKEN, SNYK_TOKEN
 
 ### **Repository-Specific Secrets:**
+
 - **xcloud-platform**: Database, Redis, JWT, Webhook secrets
 - **xcloud-dashboard**: API URLs, analytics, error tracking
 - **xcloud-runtime**: Package publishing tokens
@@ -97,20 +99,25 @@ gh secret set REACT_APP_API_BASE_URL --repo PageCloudv1/xcloud-dashboard
 ## 🔑 **Where to Get Secret Values**
 
 ### **🤖 AI & Automation**
+
 - **GEMINI_API_KEY**: [Google AI Studio](https://aistudio.google.com/app/apikey)
 
 ### **📦 Package Management**
+
 - **NPM_TOKEN**: `npm adduser && npm token create`
 - **GHCR_TOKEN**: GitHub Settings → Developer settings → Personal access tokens
 
 ### **🚀 Deployment & Hosting**
+
 - **NETLIFY_AUTH_TOKEN**: Netlify Dashboard → User Settings → Applications
 - **NETLIFY_SITE_ID**: Netlify site settings → Site details → Site ID
 
 ### **🔧 Container Registry**
+
 - **CONTAINER_REGISTRY_TOKEN**: GitHub Container Registry → Settings → Developer settings → Personal access tokens
 
 ### **🔒 Security & Code Quality**
+
 - **CODECOV_TOKEN**: codecov.io → Repository settings → Upload token
 - **SONARCLOUD_TOKEN**: SonarCloud → Account → Security → Generate token
 - **SNYK_TOKEN**: Snyk Dashboard → Settings → General → Auth Token
@@ -146,12 +153,14 @@ Your xCloud Platform is now ready for full automation!
 Após configurar os secrets, as seguintes automações estarão ativas:
 
 ### **✅ Immediately Active:**
+
 - **Gemini AI Reviews**: PRs automáticos com análise inteligente
 - **Container Publishing**: Imagens Podman automáticas
 - **Package Publishing**: NPM packages automáticos
 - **Security Scanning**: Análise de vulnerabilidades automática
 
 ### **✅ Ready for Deployment:**
+
 - **Automated Deployments**: Deploy automático no Netlify
 - **Test Coverage**: Cobertura de testes automática
 - **Code Quality**: Relatórios de qualidade automáticos
@@ -159,18 +168,21 @@ Após configurar os secrets, as seguintes automações estarão ativas:
 ## 🔧 **Troubleshooting**
 
 ### **Permission Issues:**
+
 ```bash
 # Ensure you have admin:org scope
 gh auth refresh --scopes admin:org
 ```
 
 ### **Organization Access:**
+
 ```bash  
 # Verify organization access
 gh api orgs/PageCloudv1
 ```
 
 ### **Manual Secret Setting:**
+
 ```bash
 # Set individual secret manually
 echo "your_secret_value" | gh secret set SECRET_NAME --org PageCloudv1 --visibility all

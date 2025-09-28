@@ -20,12 +20,13 @@ Apenas as versões mais recentes dos nossos componentes recebem atualizações d
 
 Para vulnerabilidades críticas ou sensíveis, use nosso canal privado:
 
-- **Email**: security@xcloud.io
+- **Email**: <security@xcloud.io>
 - **Assunto**: `[SECURITY] Descrição breve da vulnerabilidade`
 
 ### GitHub Security Advisories
 
 Para problemas menos críticos, você pode usar:
+
 - [GitHub Security Advisories](https://github.com/PageCloudv1/xcloud-platform/security/advisories)
 
 ### O que Incluir no Relatório
@@ -62,9 +63,11 @@ Descrição detalhada da vulnerabilidade.
 Se tiver ideias de como corrigir.
 
 **Ambiente Testado**:
+
 - OS: [Windows/Linux/macOS]
 - CLI: [versão]
 - Framework do Projeto: [Next.js, FastAPI, etc.]
+
 ```
 
 ## ⏰ Processo de Resposta
@@ -172,33 +175,39 @@ xcloud env add DATABASE_URL "postgres://user:pass@host/db" --secret
 ### 🔐 Melhores Práticas
 
 #### Gerenciamento de Credenciais
+
 - Use o CLI da xCloud ou a UI do dashboard para gerenciar variáveis de ambiente.
 - Crie tokens de acesso com o menor privilégio necessário.
 - Rotacione seus tokens de acesso periodicamente.
 
 #### Permissões de Equipe
+
 - Atribua papéis (Admin, Developer, Viewer) aos membros da sua equipe para limitar o acesso.
 - Não compartilhe contas de usuário.
 
 #### Monitoramento
+
 - Revise os logs de deploy e de acesso regularmente.
 - Configure alertas para atividades suspeitas no seu provedor de Git.
 
 ## 🚨 Incidentes de Segurança
 
 ### Histórico
+
 Nenhum incidente de segurança crítico reportado até o momento.
 
 ### Em Caso de Incidente
+
 Se você suspeita que seu projeto na xCloud foi comprometido:
-1.  **Rotacione imediatamente** todas as credenciais e variáveis de ambiente no seu projeto.
-2.  **Revogue** os tokens de acesso da xCloud que possam ter sido expostos.
-3.  **Revise** os logs de acesso e de deploy para identificar atividades não autorizadas.
-4.  **Contate-nos** em security@xcloud.io com os detalhes.
+
+1. **Rotacione imediatamente** todas as credenciais e variáveis de ambiente no seu projeto.
+2. **Revogue** os tokens de acesso da xCloud que possam ter sido expostos.
+3. **Revise** os logs de acesso e de deploy para identificar atividades não autorizadas.
+4. **Contate-nos** em <security@xcloud.io> com os detalhes.
 
 ## 📞 Contatos de Segurança
 
-- **Email Principal**: security@xcloud.io
+- **Email Principal**: <security@xcloud.io>
 - **Canal de Emergência**: Para incidentes críticos em andamento, contate a equipe no Discord (@SecurityTeam).
 
 ---

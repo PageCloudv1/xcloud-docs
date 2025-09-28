@@ -5,16 +5,19 @@
 ### 1. Instalar o Act (GitHub Actions Local Runner)
 
 **Windows (usando npm - recomendado):**
+
 ```bash
 npm install -g @nektos/act
 ```
 
 **Ou usando Chocolatey:**
+
 ```powershell
 choco install act-cli
 ```
 
 **macOS:**
+
 ```bash
 brew install act
 # ou via npm
@@ -22,6 +25,7 @@ npm install -g @nektos/act
 ```
 
 **Linux:**
+
 ```bash
 # Via npm (recomendado)
 npm install -g @nektos/act
@@ -31,12 +35,14 @@ curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 ```
 
 ### 2. Instalar Podman Desktop
+
 - Baixe e instale o Podman Desktop para Windows
 - O Act usa containers Podman para simular os runners do GitHub Actions
 
 ## 🚀 Scripts de Teste (Node.js)
 
 ### Setup Inicial
+
 ```bash
 # Instalar dependências
 npm install
@@ -46,6 +52,7 @@ npm run install-act  # se necessário
 ```
 
 ### Teste Rápido - Validação de Sintaxe
+
 ```bash
 # Validação rápida de todos os repositórios
 node test-workflows.js --quick-test
@@ -55,6 +62,7 @@ npm test
 ```
 
 ### Teste Completo - Job Específico
+
 ```bash
 # Testar um repositório específico
 node test-workflows.js -r xcloud-cli
@@ -67,6 +75,7 @@ node test-workflows.js --install-act --quick-test
 ```
 
 ### Exemplos de Uso
+
 ```bash
 # Teste rápido de sintaxe
 node test-workflows.js -q
@@ -84,6 +93,7 @@ node test-workflows.js --help
 ## 🎯 Testes por Repositório
 
 ### xCloud CLI
+
 ```powershell
 cd PageCloudv1-repos\xcloud-cli
 
@@ -98,6 +108,7 @@ act --job build-release --dry-run
 ```
 
 ### xCloud Dashboard  
+
 ```powershell
 cd PageCloudv1-repos\xcloud-dashboard
 
@@ -112,6 +123,7 @@ act --job e2e-tests --dry-run
 ```
 
 ### xCloud Runtime
+
 ```powershell
 cd PageCloudv1-repos\xcloud-runtime
 
@@ -126,6 +138,7 @@ act --job test-go-runtime --dry-run
 ```
 
 ### xCloud Docs
+
 ```powershell
 cd PageCloudv1-repos\xcloud-docs
 
@@ -230,17 +243,20 @@ Write-Host "`n🎉 Testes concluídos!" -ForegroundColor Green
 
 ## 🏃‍♂️ Como Executar
 
-### Teste Rápido (apenas sintaxe):
+### Teste Rápido (apenas sintaxe)
+
 ```powershell
 .\test-workflows.ps1 -QuickTest
 ```
 
-### Teste Específico:
+### Teste Específico
+
 ```powershell
 .\test-workflows.ps1 -Repository "xcloud-cli"
 ```
 
-### Teste Completo (pode demorar):
+### Teste Completo (pode demorar)
+
 ```powershell
 .\test-workflows.ps1 -DryRun:$false
 ```

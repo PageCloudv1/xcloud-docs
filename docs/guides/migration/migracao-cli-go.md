@@ -7,6 +7,7 @@ O **xcloud-cli** foi migrado de Python para Go com todas as melhorias solicitada
 ### 🚀 **O que foi implementado:**
 
 #### **1. Nova Stack Tecnológica**
+
 - **🐹 Go 1.21** como linguagem principal
 - **🔧 Cobra Framework** para interface CLI robusta
 - **⚙️ Viper** para gerenciamento de configurações
@@ -14,12 +15,14 @@ O **xcloud-cli** foi migrado de Python para Go com todas as melhorias solicitada
 - **🛡️ gosec** para security scanning
 
 #### **2. Compilação Cross-Platform**
+
 - **🐧 Linux** (amd64, arm64)
 - **🪟 Windows** (amd64, arm64)
 - **❌ macOS removido** (conforme solicitado - apenas Win/Linux)
 - **📦 Binários otimizados** com flags `-ldflags="-s -w"`
 
 #### **3. Workflow Atualizado**
+
 - **🔍 Lint & Format** - golangci-lint + gofmt
 - **🧪 Test** - Testes automatizados em matriz Go 1.20-1.22
 - **🔨 Build** - Cross-compilation para 4 targets (linux/windows + amd64/arm64)
@@ -28,6 +31,7 @@ O **xcloud-cli** foi migrado de Python para Go com todas as melhorias solicitada
 - **🚀 Release** - Automated binary releases com archives
 
 #### **4. CLI Funcional**
+
 - **Comandos implementados:**
   - `xcloud version` - Informações da versão
   - `xcloud deploy` - Deploy de aplicações
@@ -80,6 +84,7 @@ xcloud-cli/
 ### 🎉 **Resultado**
 
 O **xcloud-cli** agora é:
+
 - ⚡ **10x mais rápido** na inicialização  
 - 📦 **5x menor** em tamanho de distribuição
 - 🔧 **Muito mais fácil** de instalar (binário único)

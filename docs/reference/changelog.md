@@ -8,6 +8,7 @@ e este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 ## [Não Lançado]
 
 ### Adicionado
+
 - Sistema completo de documentação.
 - Templates de issues para GitHub.
 - Guia de contribuição detalhado.
@@ -15,21 +16,26 @@ e este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 - Estrutura de testes aprimorada para múltiplos frameworks.
 
 ### Alterado
+
 - Melhorias na documentação da API da plataforma.
 - Atualização dos exemplos de projeto para usar Podman.
 
 ### Removido
+
 - Nada removido nesta versão.
 
 ### Corrigido
+
 - Correções de bugs menores na documentação.
 
 ### Segurança
+
 - Melhorias na gestão de credenciais para deployments.
 
 ## [1.0.0] - 2024-09-27
 
 ### Adicionado
+
 - 🚀 Lançamento inicial da **xCloud Platform**.
 - 🏗️ Motor de build para frameworks Frontend e Backend.
 - ⚡ Runtimes para Funções Serverless (Python, Node.js, Go).
@@ -43,11 +49,13 @@ e este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 - ☁️ Ferramentas de deploy para múltiplas nuvens.
 
 ### Frameworks Suportados
+
 - ✅ **Frontend**: React, Next.js, Vue, Svelte, Angular, HTML/JS.
 - ✅ **Backend**: FastAPI, Express, Django, Flask, Go.
 - ✅ **Serverless**: Python, Node.js, Go.
 
 ### CLI Commands
+
 - `xcloud init` - Criar novos projetos a partir de templates.
 - `xcloud dev` - Iniciar ambiente de desenvolvimento local.
 - `xcloud deploy` - Fazer deploy para a nuvem.
@@ -57,12 +65,14 @@ e este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 - `xcloud component` - Gerenciar componentes do marketplace.
 
 ### Recursos de IA
+
 - 🧠 Análise de logs de build para detecção de erros.
 - 📊 Otimização de performance de build com sugestões de IA.
 - 🤖 Assistente de CLI com Gemini para gerar comandos.
 - 🔍 Revisão de código em Pull Requests com foco em segurança e performance.
 
 ### Developer Experience
+
 - 📝 Type hints completos no código Python.
 - 🔄 Async/await nativo para operações de I/O.
 - 🧪 Framework de testes integrado para a plataforma.
@@ -72,6 +82,7 @@ e este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 - 📊 Profiling e debugging integrados.
 
 ### Deployment
+
 - 🐳 Imagens de container otimizadas com Alpine Linux.
 - ☁️ Deploy com um clique para Vercel, Netlify, AWS, GCP, Azure.
 - 🔄 Templates de CI/CD para GitHub Actions.
@@ -85,6 +96,7 @@ e este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 ### [2.0.0] - Planejado para Q1 2025
 
 #### Planejado
+
 - 🔄 Migração completa para Podman em todos os serviços.
 - 🌐 Interface web redesenhada com mais funcionalidades.
 - 📱 App mobile para monitoramento de deployments.
@@ -94,6 +106,7 @@ e este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 - 🛡️ Sistema de segurança aprimorado com WAF na Edge Network.
 
 #### Breaking Changes
+
 - Remoção completa do suporte a Docker (migrado para Podman).
 - Mudanças na API de gerenciamento de projetos.
 - Novo formato de configuração `xcloud.json`.
@@ -101,6 +114,7 @@ e este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 ### [1.5.0] - Planejado para Q4 2024
 
 #### Planejado
+
 - 📊 Mais templates de projetos (SaaS, E-commerce).
 - 🤖 Melhorias na IA para análise de código.
 - 📱 Notificações push mobile para status de deploy.

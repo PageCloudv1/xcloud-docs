@@ -186,6 +186,7 @@ Novos contribuidores que se destacaram:
 Quer se juntar à nossa lista? Há muitas formas:
 
 ### 💻 Code
+
 - Corrigir bugs reportados
 - Implementar novas funcionalidades  
 - Melhorar a performance
@@ -193,6 +194,7 @@ Quer se juntar à nossa lista? Há muitas formas:
 - Refatorar código
 
 ### 📚 Documentation
+
 - Escrever tutoriais
 - Melhorar a documentação da API
 - Criar exemplos
@@ -200,12 +202,14 @@ Quer se juntar à nossa lista? Há muitas formas:
 - Gravar vídeos
 
 ### 🎨 Design
+
 - Melhorias de UI/UX
 - Criar gráficos
 - Desenhar ícones
 - Guias de marca
 
 ### 🤝 Community
+
 - Ajudar usuários no Discord
 - Responder a perguntas
 - Moderar discussões  
@@ -213,6 +217,7 @@ Quer se juntar à nossa lista? Há muitas formas:
 - Criar conteúdo
 
 ### 🧪 Testing
+
 - Testar funcionalidades beta
 - Reportar bugs
 - Testes de performance
@@ -220,6 +225,7 @@ Quer se juntar à nossa lista? Há muitas formas:
 - Testes multi-plataforma
 
 ### 📦 Packages
+
 - Criar templates de projetos
 - Construir componentes de UI
 - Desenvolver ferramentas
@@ -229,7 +235,7 @@ Quer se juntar à nossa lista? Há muitas formas:
 
 Para questões sobre contribuições:
 
-- **Email**: contributors@xcloud.io
+- **Email**: <contributors@xcloud.io>
 - **Discord**: #contributors channel
 - **GitHub**: [@PageCloudv1/contributors](https://github.com/orgs/PageCloudv1/teams/contributors)
 

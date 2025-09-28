@@ -2,17 +2,17 @@
 
 ## 📚 Table of Contents
 
-1. [System Architecture](#system-architecture)
-2. [Platform Structure](#platform-structure)
-3. [Core Components](#core-components)
-4. [Serverless Runtime](#serverless-runtime)
-5. [Edge Computing](#edge-computing)
-6. [Build & Deploy Pipeline](#build--deploy-pipeline)
-7. [Template System](#template-system)
-8. [Component Marketplace](#component-marketplace)
-9. [Security Architecture](#security-architecture)
-10. [Deployment Architecture](#deployment-architecture)
-11. [Development Workflow](#development-workflow)
+1. [System Architecture](#️-system-architecture)
+2. [Platform Structure](#-platform-structure)
+3. [Core Components](#-core-components)
+4. [Serverless Runtime](#-deployment-event-flow)
+5. [Edge Computing](#-security-architecture)
+6. [Build & Deploy Pipeline](#-deployment-architecture)
+7. [Template System](#-development-workflow)
+8. [Component Marketplace](#-component-marketplace)
+9. [Security Architecture](#-security-architecture)
+10. [Deployment Architecture](#-deployment-architecture)
+11. [Development Workflow](#-development-workflow)
 
 ## 🏗️ System Architecture
 
@@ -492,6 +492,8 @@ async def test_nextjs_build_pipeline():
 
 **xCloud Platform** - The Future of Web Deployment
 
-[Documentation](https://docs.xcloud.io) | [GitHub](https://github.com/PageCloudv1/xcloud-platform) | [Discord](https://discord.gg/xcloud)
+[Documentation](https://docs.xcloud.io) |
+[GitHub](https://github.com/PageCloudv1/xcloud-platform) |
+[Discord](https://discord.gg/xcloud)
 
 </div>

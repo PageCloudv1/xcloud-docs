@@ -13,21 +13,25 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🎯 Estrutura de Prioridades
 
 ### 🔴 **CRÍTICO** (P0) - Fazer Primeiro
+
 - Segurança e acesso
 - Configurações básicas da organização
 - Estrutura de teams
 
 ### 🟠 **ALTO** (P1) - Próximas 2 Semanas
+
 - Repositórios e templates
 - CI/CD básico
 - Branch protection
 
 ### 🟡 **MÉDIO** (P2) - Próximo Mês
+
 - Automação avançada
 - Documentação
 - Monitoramento
 
 ### 🟢 **BAIXO** (P3) - Quando Possível
+
 - Otimizações
 - Features extras
 - Treinamentos avançados
@@ -37,6 +41,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🏗️ FASE 1: CONFIGURAÇÃO INICIAL (Semana 1)
 
 ### 🔐 Segurança e Autenticação (P0)
+
 - [ ] **SEC-001** Configurar autenticação 2FA obrigatória para toda organização
   - Responsável: Security Team
   - Prazo: 2 dias
@@ -54,6 +59,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🔴 Pendente
 
 ### 🏢 Estrutura Organizacional (P0)
+
 - [ ] **ORG-001** Criar organização PageCloudv1
   - Responsável: Admin Team
   - Prazo: 1 dia
@@ -78,6 +84,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🔴 Pendente
 
 ### 💰 Billing e Limites (P0)
+
 - [ ] **BILL-001** Configurar billing para GitHub Enterprise
   - Responsável: Admin Team
   - Prazo: 1 dia
@@ -94,6 +101,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🏗️ FASE 2: REPOSITÓRIOS E TEMPLATES (Semana 2)
 
 ### 📦 Repository Templates (P1)
+
 - [x] **TEMP-001** Criar template padrão com estrutura básica
   - .github/workflows/ci.yml
   - .github/CODEOWNERS
@@ -117,6 +125,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟠 Pendente
 
 ### 🔒 Proteção de Branches (P1)
+
 - [ ] **BRANCH-001** Configurar branch protection para main
   - Required status checks
   - Require PR reviews (2 approvals)
@@ -135,6 +144,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟠 Pendente
 
 ### 📁 CODEOWNERS (P1)
+
 - [ ] **CODE-001** Criar arquivos CODEOWNERS para repositórios críticos
   - ChartSpire
   - ChartSpire-backend
@@ -144,6 +154,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟠 Pendente
 
 ### 🤖 CLI Enhancements (P2)
+
 - [ ] **CLI-001** Implementar melhorias de segurança do PR #6
   - Rate limiting no config file discovery
   - Regex validation mais robusto para nomes
@@ -170,6 +181,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟡 Pendente
 
 ### 🔐 Dependabot (P1)
+
 - [ ] **DEP-001** Configurar Dependabot para todos os repositórios
   - Security updates
   - Version updates
@@ -183,6 +195,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🏗️ FASE 3: CI/CD E AUTOMAÇÃO (Semana 3-4)
 
 ### ⚙️ GitHub Actions Workflows (P1)
+
 - [ ] **CI-001** Criar workflow básico de CI
   - Code quality check
   - Linting (ESLint, Prettier)
@@ -211,6 +224,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟠 Pendente
 
 ### 🏃‍♂️ Self-hosted Runners (P2)
+
 - [ ] **RUN-001** Configurar self-hosted runners
   - Linux runners (Ubuntu 22.04)
   - Windows runners
@@ -228,6 +242,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟡 Pendente
 
 ### 🔐 Secrets Management (P1)
+
 - [ ] **SEC-101** Configurar environments
   - Development
   - Staging  
@@ -250,6 +265,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🏗️ FASE 4: SEGURANÇA AVANÇADA (Mês 2)
 
 ### 🛡️ GitHub Advanced Security (P1)
+
 - [ ] **ADV-001** Ativar GitHub Advanced Security
   - Code scanning
   - Secret scanning
@@ -269,6 +285,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟠 Pendente
 
 ### 🔍 Vulnerability Scanning (P1)
+
 - [ ] **VULN-001** Configurar Snyk integration
   - Dependency scanning
   - Container scanning
@@ -285,6 +302,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟠 Pendente
 
 ### 📋 Security Policies (P1)
+
 - [ ] **POL-001** Criar SECURITY.md para todos os repositórios
   - Vulnerability reporting process
   - Supported versions
@@ -306,6 +324,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🏗️ FASE 5: DOCUMENTAÇÃO E WIKI (Mês 2)
 
 ### 📖 GitHub Pages (P2)
+
 - [ ] **PAGES-001** Configurar GitHub Pages para documentação
   - Setup custom domain
   - SSL certificate
@@ -325,6 +344,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟡 Pendente
 
 ### 📚 Wiki Management (P2)
+
 - [ ] **WIKI-001** Configurar Wiki automático
   - Sync README to Wiki
   - Auto-generate from OpenAPI
@@ -344,6 +364,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟡 Pendente
 
 ### 💬 GitHub Discussions (P2)
+
 - [ ] **DISC-001** Configurar categorias de discussões
   - Announcements
   - Ideas
@@ -370,6 +391,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🏗️ FASE 6: MONITORAMENTO E MÉTRICAS (Mês 3)
 
 ### 📊 Audit Logs (P1)
+
 - [ ] **AUDIT-001** Configurar audit log streaming
   - Splunk integration
   - Log retention policies
@@ -388,6 +410,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟠 Pendente
 
 ### 📈 Métricas e Analytics (P2)
+
 - [ ] **METRICS-001** Configurar GitHub Insights
   - Development velocity
   - Code review metrics
@@ -406,6 +429,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟡 Pendente
 
 ### 🚨 Alertas e Notificações (P1)
+
 - [ ] **ALERT-001** Configurar alertas críticos
   - Security incidents
   - Build failures
@@ -424,6 +448,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟠 Pendente
 
 ### ⚕️ Health Checks (P2)
+
 - [ ] **HEALTH-001** Implementar repository health checks
   - Documentation coverage
   - Security compliance
@@ -446,6 +471,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🏗️ FASE 7: TREINAMENTO E PROCESSOS (Contínuo)
 
 ### 📚 Treinamento de Equipe (P2)
+
 - [ ] **TRAIN-001** Criar material de onboarding
   - GitHub Enterprise basics
   - Security best practices
@@ -464,6 +490,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟡 Pendente
 
 ### 📝 Documentação de Processos (P2)
+
 - [ ] **PROC-001** Documentar workflows de desenvolvimento
   - Feature development
   - Bug fixing
@@ -482,6 +509,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟡 Pendente
 
 ### 🎓 Knowledge Base (P3)
+
 - [ ] **KB-001** Criar base de conhecimento
   - FAQ
   - Troubleshooting guides
@@ -504,6 +532,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🚀 TAREFAS ESPECIAIS E OTIMIZAÇÕES
 
 ### 🤖 GitHub Apps e Bots (P2)
+
 - [ ] **BOT-001** Criar PageCloudv1 Automation Bot
   - Auto-labeling
   - PR management
@@ -521,6 +550,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟡 Pendente
 
 ### 🌐 Integrações Externas (P3)
+
 - [ ] **INT-001** Integrar com Jira/Azure DevOps
   - Issue syncing
   - Workflow automation
@@ -537,6 +567,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
   - Status: 🟢 Pendente
 
 ### 📦 Package Management (P2)
+
 - [ ] **PKG-001** Configurar GitHub Packages
   - npm registry
   - Container registry
@@ -558,28 +589,36 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 🎯 MILESTONES E DEADLINES
 
 ### 🏁 Milestone 1: Foundation (Semana 2)
+
 **Meta**: Organização funcional com teams e segurança básica
+
 - ✅ Todas as tarefas P0 completas
 - ✅ SAML SSO configurado
 - ✅ Teams estruturados
 - ✅ 2FA obrigatório
 
 ### 🏁 Milestone 2: Development Ready (Semana 4)
+
 **Meta**: Desenvolvedores podem trabalhar de forma segura e eficiente
+
 - ✅ Templates de repositório criados
 - ✅ CI/CD básico funcionando
 - ✅ Branch protection ativo
 - ✅ Code owners definidos
 
 ### 🏁 Milestone 3: Production Ready (Mês 2)
+
 **Meta**: Pipelines completos para produção
+
 - ✅ Deployment automático
 - ✅ Security scanning completo
 - ✅ Monitoring básico
 - ✅ Documentation estruturada
 
 ### 🏁 Milestone 4: Enterprise Grade (Mês 3)
+
 **Meta**: Organização madura e otimizada
+
 - ✅ Audit logs configurados
 - ✅ Dashboards completos
 - ✅ Processes documentados
@@ -590,6 +629,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 📊 DASHBOARD DE PROGRESSO
 
 ### Por Fase
+
 - **Fase 1**: 🔴 0/8 (0%)
 - **Fase 2**: 🟠 1/8 (12.5%) - CLI Core implementado
 - **Fase 3**: 🟠 0/9 (0%)
@@ -599,12 +639,14 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 - **Fase 7**: 🟡 0/6 (0%)
 
 ### Por Prioridade
+
 - **P0 (Crítico)**: 🔴 0/8 (0%)
 - **P1 (Alto)**: 🟠 0/25 (0%)
 - **P2 (Médio)**: 🟡 0/20 (0%)
 - **P3 (Baixo)**: 🟢 0/4 (0%)
 
 ### Por Equipe
+
 - **Admin Team**: 0/5 (0%)
 - **Security Team**: 0/15 (0%)
 - **DevOps Team**: 0/25 (0%)
@@ -616,6 +658,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ## 📋 TEMPLATES DE TAREFAS
 
 ### Template para Nova Tarefa
+
 ```markdown
 - [ ] **[CATEGORIA-NUM]** Título da tarefa
   - Descrição detalhada
@@ -628,6 +671,7 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 ```
 
 ### Códigos de Status
+
 - 🔴 **Crítico/Bloqueado** - Precisa atenção imediata
 - 🟠 **Em Progresso** - Sendo trabalhado ativamente
 - 🟡 **Planejado** - Próximo na fila
@@ -647,7 +691,9 @@ Este documento organiza todas as tarefas necessárias para implementar e gerenci
 5. **Revisar dependencies**: Verifique se pré-requisitos foram atendidos
 
 ### Pull Request para Tasks
+
 Quando uma tarefa for completada:
+
 1. Marque como ✅
 2. Adicione data de conclusão
 3. Faça PR com evidência (screenshots, links, etc.)
@@ -658,17 +704,20 @@ Quando uma tarefa for completada:
 ## 📞 CONTATOS E ESCALAÇÃO
 
 ### Tech Leads por Área
+
 - **Security**: [@security-lead]
 - **DevOps**: [@devops-lead]  
 - **Frontend**: [@frontend-lead]
 - **Backend**: [@backend-lead]
 
 ### Escalação de Bloqueios
+
 1. **Nível 1**: Tech Lead da área
 2. **Nível 2**: Engineering Manager
 3. **Nível 3**: CTO
 
 ### Canal de Comunicação
+
 - **Slack**: #pagecloud-tasks
 - **Daily Standup**: 9:00 AM UTC
 - **Weekly Review**: Sextas 16:00 UTC

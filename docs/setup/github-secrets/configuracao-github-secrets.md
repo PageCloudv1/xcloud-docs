@@ -7,6 +7,7 @@ Configuração completa de secrets necessários para a **PageCloudv1 Organizatio
 ## 🏢 **Organization-Level Secrets**
 
 ### **🤖 AI & Automation**
+
 ```bash
 GEMINI_API_KEY
 # Descrição: Chave API do Google Gemini AI para automações inteligentes
@@ -16,6 +17,7 @@ GEMINI_API_KEY
 ```
 
 ### **📦 Package Management**
+
 ```bash
 NPM_TOKEN
 # Descrição: Token NPM para publicar pacotes @xcloud/*
@@ -25,6 +27,7 @@ NPM_TOKEN
 ```
 
 ### **🚀 Deployment & Hosting**
+
 ```bash
 NETLIFY_AUTH_TOKEN
 # Descrição: Token Netlify para deploy automático
@@ -43,6 +46,7 @@ NETLIFY_SITE_ID_DOCS
 ```
 
 ### **🔧 Container Registry**
+
 ```bash
 CONTAINER_REGISTRY_USERNAME
 # Descrição: Username Container Registry para publicar imagens
@@ -62,6 +66,7 @@ GHCR_TOKEN
 ```
 
 ### **☁️ Cloud Providers**
+
 ```bash
 AWS_ACCESS_KEY_ID
 # Descrição: AWS Access Key para deployments
@@ -85,6 +90,7 @@ AZURE_CREDENTIALS
 ```
 
 ### **🔒 Security & Code Quality**
+
 ```bash
 CODECOV_TOKEN
 # Descrição: Token Codecov para relatórios de cobertura
@@ -105,6 +111,7 @@ SNYK_TOKEN
 ## 📊 **Repository-Specific Secrets**
 
 ### **xcloud-platform**
+
 ```bash
 DATABASE_URL                 # PostgreSQL connection string
 REDIS_URL                   # Redis connection string
@@ -113,6 +120,7 @@ WEBHOOK_SECRET             # GitHub webhook secret
 ```
 
 ### **xcloud-dashboard**
+
 ```bash
 REACT_APP_API_BASE_URL     # xCloud API base URL
 REACT_APP_SENTRY_DSN       # Sentry error tracking
@@ -120,6 +128,7 @@ REACT_APP_ANALYTICS_ID     # Google Analytics ID
 ```
 
 ### **xcloud-runtime**
+
 ```bash
 PYTHON_PACKAGE_TOKEN       # PyPI publishing token  
 GO_PROXY_AUTH             # Go module proxy auth
@@ -198,16 +207,19 @@ gh secret list --org PageCloudv1 | grep GEMINI_API_KEY
 ## 🎯 **Priority Setup Order**
 
 ### **🚨 Critical (Setup First)**
+
 1. **GEMINI_API_KEY** - Necessário para automações AI
 2. **GHCR_TOKEN** - Para container registry
 3. **NPM_TOKEN** - Para publicar pacotes
 
 ### **⚡ High Priority**
+
 4. **NETLIFY_AUTH_TOKEN** + Site IDs - Para deployments
 5. **CONTAINER_REGISTRY_TOKEN** - Para imagens Podman
 6. **CODECOV_TOKEN** - Para cobertura de testes
 
 ### **🔧 Medium Priority**
+
 7. **Cloud Provider Secrets** (AWS, GCP, Azure)
 8. **Security Tokens** (SONARCLOUD, SNYK)
 9. **Repository-specific secrets**

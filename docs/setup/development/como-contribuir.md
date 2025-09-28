@@ -26,28 +26,33 @@ Este projeto segue o [Código de Conduta](codigo-de-conduta.md). Ao participar, 
 Existem várias formas de contribuir com a xCloud Platform:
 
 ### 🐛 Reportando Bugs
+
 - Abra uma nova issue no GitHub.
 - Forneça informações detalhadas sobre o ambiente.
 - Inclua passos para reproduzir o problema.
 
 ### ✨ Sugerindo Funcionalidades
+
 - Abra uma nova issue no GitHub para sugestões de funcionalidades.
 - Descreva o caso de uso e os benefícios.
 - Considere a compatibilidade com a arquitetura existente.
 
 ### 💻 Contribuindo com Código
+
 - Correção de bugs.
 - Implementação de novas funcionalidades na plataforma.
 - Melhoria na performance do build ou deploy.
 - Refatoração de código.
 
 ### 📚 Contribuindo com Documentação
+
 - Melhoria da documentação existente.
 - Criação de tutoriais e guias.
 - Tradução para outros idiomas.
 - Exemplos de código.
 
 ### 📦 Criando Componentes e Templates
+
 - Desenvolvimento de templates de aplicações (e.g., Next.js, FastAPI).
 - Criação de componentes de UI reutilizáveis.
 - Plugins para integrações com serviços de terceiros.
@@ -258,14 +263,15 @@ mkdocs build
 
 ### Processo de Review
 
-1.  **Automatizado**: O CI/CD executa testes e verificações de qualidade.
-2.  **Revisão por Pares**: Um ou mais mantenedores revisarão o código.
-3.  **Discussão**: Feedback e sugestões serão feitos no PR.
-4.  **Aprovação**: O PR será mesclado após a aprovação.
+1. **Automatizado**: O CI/CD executa testes e verificações de qualidade.
+2. **Revisão por Pares**: Um ou mais mantenedores revisarão o código.
+3. **Discussão**: Feedback e sugestões serão feitos no PR.
+4. **Aprovação**: O PR será mesclado após a aprovação.
 
 ## 🐛 Reportar Bugs
 
 Use o template de issue de bug e forneça:
+
 - **Ambiente**: OS, versão do Python/Node, versão do CLI da xCloud.
 - **Framework do Projeto**: Ex: Next.js 13, FastAPI 0.95.
 - **Descrição clara do bug**.
@@ -275,6 +281,7 @@ Use o template de issue de bug e forneça:
 ## ✨ Solicitar Funcionalidades
 
 Use o template de feature request e descreva:
+
 - O problema que a funcionalidade resolve.
 - A solução que você propõe.
 - Alternativas que você considerou.

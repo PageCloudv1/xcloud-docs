@@ -5,11 +5,13 @@ Este guia detalha a configuração completa dos GitHub Actions para a organizaç
 ## 📋 Status Atual dos Workflows
 
 ### ✅ xcloud-platform (Repositório Principal)
+
 - **🔍 CI/CD Pipeline** - Workflow de teste e verificação
 - **🚀 Deploy to Production** - Workflow de deployment
 - **Copilot** - Workflow automático do GitHub Copilot
 
 ### ❌ Repositórios sem Workflows (Precisam ser configurados)
+
 - xcloud-cli
 - xcloud-dashboard  
 - xcloud-runtime
@@ -22,9 +24,10 @@ Este guia detalha a configuração completa dos GitHub Actions para a organizaç
 
 ### 1. 🏢 Organization-Level Settings
 
-**Acesse**: https://github.com/organizations/PageCloudv1/settings/actions
+**Acesse**: <https://github.com/organizations/PageCloudv1/settings/actions>
 
 #### General Policies
+
 ```yaml
 Actions permissions: 
   - ✅ Allow all actions and reusable workflows
@@ -42,6 +45,7 @@ Workflow permissions:
 ```
 
 #### Required Status Checks (Organization-wide)
+
 ```yaml
 Required checks for all repositories:
   - "test" (CI/CD Pipeline)
@@ -91,6 +95,7 @@ SONAR_TOKEN=***
 ### 3. 🌍 Environment Protection Rules
 
 #### Production Environment
+
 ```yaml
 Protection rules:
   - ✅ Required reviewers: 2 (from: @xcloud-core-team, @xcloud-devops-team)
@@ -105,6 +110,7 @@ Environment secrets:
 ```
 
 #### Staging Environment
+
 ```yaml
 Protection rules:
   - ✅ Required reviewers: 1 (from: @xcloud-core-team)
@@ -121,6 +127,7 @@ Environment secrets:
 ### 🌟 xcloud-platform (Core Platform)
 
 #### Workflow: CI/CD Pipeline
+
 ```yaml
 # Status: ✅ Configurado (mas precisa melhorias)
 # Melhorias necessárias:
@@ -131,6 +138,7 @@ Environment secrets:
 ```
 
 #### Workflow: Deploy to Production  
+
 ```yaml
 # Status: ✅ Configurado (mas precisa melhorias)
 # Melhorias necessárias:
@@ -141,6 +149,7 @@ Environment secrets:
 ```
 
 #### Novo Workflow Necessário: Security & Compliance
+
 ```yaml
 name: 🔒 Security & Compliance
 triggers:
@@ -158,6 +167,7 @@ jobs:
 ### ⚡ xcloud-cli
 
 #### Workflow: CLI Testing & Publishing
+
 ```yaml
 name: 🔧 CLI Build & Test
 triggers:
@@ -180,6 +190,7 @@ jobs:
 ### 🎨 xcloud-dashboard
 
 #### Workflow: Frontend CI/CD
+
 ```yaml
 name: 🎨 Dashboard CI/CD
 triggers:
@@ -204,6 +215,7 @@ jobs:
 ### 🚀 xcloud-runtime
 
 #### Workflow: Runtime Testing
+
 ```yaml
 name: ⚡ Runtime Testing
 triggers:
@@ -224,6 +236,7 @@ jobs:
 ### 📚 xcloud-docs
 
 #### Workflow: Documentation Build
+
 ```yaml
 name: 📚 Docs Build & Deploy
 triggers:
@@ -241,6 +254,7 @@ jobs:
 ### 📦 xcloud-templates
 
 #### Workflow: Template Testing
+
 ```yaml
 name: 📦 Template Validation
 triggers:
@@ -261,6 +275,7 @@ jobs:
 ### 🧩 xcloud-components
 
 #### Workflow: Component Registry
+
 ```yaml
 name: 🧩 Component Registry
 triggers:
@@ -282,6 +297,7 @@ jobs:
 ### 🎯 xcloud-examples
 
 #### Workflow: Example Projects Testing
+
 ```yaml
 name: 🎯 Examples Testing
 triggers:
@@ -303,6 +319,7 @@ jobs:
 Criar workflows reutilizáveis na organização:
 
 ### .github/workflows/reusable-python-test.yml
+
 ```yaml
 name: Reusable Python Testing
 on:
@@ -332,6 +349,7 @@ jobs:
 ```
 
 ### .github/workflows/reusable-node-test.yml
+
 ```yaml
 name: Reusable Node.js Testing  
 on:
@@ -364,6 +382,7 @@ jobs:
 ```
 
 ### .github/workflows/reusable-security-scan.yml
+
 ```yaml
 name: Reusable Security Scanning
 on:
@@ -401,6 +420,7 @@ jobs:
 ## 📊 Monitoring & Analytics
 
 ### Self-Hosted Runners (Opcional)
+
 Para builds intensivos ou específicos:
 
 ```yaml
@@ -416,7 +436,9 @@ Runner types:
 ```
 
 ### Workflow Analytics
+
 Configurar métricas para:
+
 - Build success/failure rates
 - Average build times
 - Resource usage
@@ -426,6 +448,7 @@ Configurar métricas para:
 ## 🚨 Alerting & Notifications
 
 ### Slack Integration
+
 ```yaml
 - name: Slack Notification
   uses: 8398a7/action-slack@v3
@@ -437,6 +460,7 @@ Configurar métricas para:
 ```
 
 ### Discord Integration  
+
 ```yaml
 - name: Discord Notification
   uses: Ilshidur/action-discord@master
@@ -449,23 +473,27 @@ Configurar métricas para:
 ## 📅 Implementation Timeline
 
 ### Phase 1 (Week 1): Core Setup
+
 - [ ] Configure organization-level settings
 - [ ] Setup organization secrets
 - [ ] Create environment protection rules
 - [ ] Improve existing workflows in xcloud-platform
 
 ### Phase 2 (Week 2): Repository Workflows
+
 - [ ] Create CLI workflows (xcloud-cli)
 - [ ] Create dashboard workflows (xcloud-dashboard)
 - [ ] Create runtime workflows (xcloud-runtime)
 
 ### Phase 3 (Week 3): Supporting Workflows
+
 - [ ] Create docs workflows (xcloud-docs)
 - [ ] Create template workflows (xcloud-templates)
 - [ ] Create component workflows (xcloud-components)
 - [ ] Create examples workflows (xcloud-examples)
 
 ### Phase 4 (Week 4): Advanced Features
+
 - [ ] Setup reusable workflows
 - [ ] Configure self-hosted runners (if needed)
 - [ ] Setup monitoring and alerting
@@ -474,7 +502,7 @@ Configurar métricas para:
 ## 🛠️ Manual Configuration Steps
 
 1. **Organization Settings**
-   - Go to https://github.com/organizations/PageCloudv1/settings/actions
+   - Go to <https://github.com/organizations/PageCloudv1/settings/actions>
    - Configure permissions and policies
    - Setup required status checks
 
@@ -496,6 +524,7 @@ Configurar métricas para:
 ## 🎯 Success Metrics
 
 After implementation, monitor:
+
 - **Build Success Rate**: >95%
 - **Average Build Time**: &lt;10 minutos
 - **Deployment Frequency**: Daily (staging), Weekly (production)

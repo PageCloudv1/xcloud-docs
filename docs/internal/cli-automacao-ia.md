@@ -310,12 +310,14 @@ jobs:
 ### 🔑 **Setup Necessário**
 
 1. **🔐 Secrets requeridos:**
+
    ```bash
    GEMINI_API_KEY         # Do Google AI Studio
    GITHUB_TOKEN           # Automático
    ```
 
 2. **📝 Arquivo GEMINI.md no root:**
+
    ```markdown
    # xCloud CLI - Context for Gemini
    
@@ -338,6 +340,7 @@ jobs:
 ### 🎉 **Resultado Final**
 
 Com essas automações, o **xcloud-cli** terá:
+
 - 🤖 **PRs automáticos** com melhorias sugeridas por IA
 - 🔍 **Code reviews inteligentes** em todos os PRs  
 - 🎯 **Issues automáticas** de melhorias semanais
