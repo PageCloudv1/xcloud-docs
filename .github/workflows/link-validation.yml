@@ -45,14 +45,12 @@ jobs:
             --exclude-mail
             --exclude-private
             --exclude-file .lycheeignore
-            --headers "accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
             --user-agent "xCloud-Docs-Bot/1.0 (Link Validation)"
-            --scheme http
-            --scheme https
             --format detailed
             './docs/**/*.md'
             './README.md'
             './build/**/*.html'
+          output: lychee/out.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
