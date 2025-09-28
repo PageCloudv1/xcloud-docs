@@ -1,0 +1,54 @@
+# Podman Compose Configuration
+# xCloud Platform - Development Environment
+
+version: '3.8'
+
+services:
+  xcloud-platform:
+    build:
+      context: .
+      containerfile: Containerfile  # Podman preferred naming
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - xcloud-network
+
+  xcloud-database:
+    image: postgres:13-alpine
+    environment:
+      - POSTGRES_DB=xcloud
+      - POSTGRES_USER=xcloud
+      - POSTGRES_PASSWORD=development
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - xcloud-network
+
+  xcloud-cache:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - xcloud-network
+
+volumes:
+  postgres_data:
+
+networks:
+  xcloud-network:
+    driver: bridge
+
+# Podman-specific optimizations:
+# - Uses Containerfile (Podman standard)
+# - Alpine Linux images for minimal resource usage
+# - Compatible with podman-compose
+# 
+# Usage:
+#   podman-compose up -d    # Start services
+#   podman-compose down     # Stop services
+#   podman-compose logs     # View logs

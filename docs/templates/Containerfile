@@ -1,0 +1,56 @@
+# xCloud Platform Containerfile
+# Optimized for Podman with Alpine Linux
+
+# Use Alpine Linux for minimal footprint
+FROM node:18-alpine AS base
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies (Alpine Linux)
+RUN apk add --no-cache \
+    git \
+    python3 \
+    py3-pip \
+    build-base \
+    && rm -rf /var/cache/apk/*
+
+# Copy package files
+COPY package*.json ./
+COPY requirements*.txt ./
+
+# Install dependencies
+RUN npm ci --only=production && \
+    pip3 install --no-cache-dir -r requirements.txt
+
+# Copy application code
+COPY . .
+
+# Create non-root user (rootless compatible)
+RUN addgroup -g 1001 -S xcloud && \
+    adduser -S xcloud -u 1001 -G xcloud
+
+# Change ownership
+RUN chown -R xcloud:xcloud /app
+USER xcloud
+
+# Expose port
+EXPOSE 8000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+    CMD wget --no-verbose --tries=1 --spider http://localhost:8000/health || exit 1
+
+# Start application
+CMD ["npm", "start"]
+
+# Podman-specific optimizations:
+# - Alpine Linux base (5MB vs Ubuntu 80MB)
+# - Rootless user (security best practice)
+# - Minimal dependencies
+# - Multi-stage builds support
+# 
+# Build:
+#   podman build -t xcloud-platform .
+# Run:
+#   podman run -d -p 8000:8000 xcloud-platform
