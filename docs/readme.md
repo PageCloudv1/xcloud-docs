@@ -137,9 +137,9 @@ Siga o guia: [Guia para Desenvolvedores](setup/development/guia-do-desenvolvedor
 
 ## 🎯 **Suporte**
 
-- **Issues**: [GitHub Issues](https://github.com/PageCloudv1/xcloud-platform/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/PageCloudv1/xcloud-platform/discussions)
-- **Wiki**: [GitHub Wiki](https://github.com/PageCloudv1/xcloud-platform/wiki)
+- **Issues**: [GitHub Issues](https://github.com/PageCloudv1/xcloud-docs/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/PageCloudv1/xcloud-docs/discussions)
+- **Wiki**: [GitHub Wiki](https://github.com/PageCloudv1/xcloud-docs/wiki)
 
 ---
 

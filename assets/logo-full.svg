@@ -1,0 +1,18 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Icon Definition -->
+<defs>
+<linearGradient id="iconGradient" x1="0" y1="0" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007BFF"/>
+<stop offset="1" stop-color="#00C6FF"/>
+</linearGradient>
+</defs>
+<!-- Icon Drawing -->
+<g transform="translate(50, 50) scale(1)">
+<path d="M225 225C225 267.467 190.467 302 148 302C123.417 302 101.667 292.167 86.6667 275.5L225 75V225Z" fill="url(#iconGradient)"/>
+<path d="M75 75C75 32.5329 109.533 -2.99999 152 -3C176.583 -3 198.333 7.83334 213.333 24.5L75 225V75Z" fill="url(#iconGradient)"/>
+</g>
+<!-- Text -->
+<text x="380" y="235" font-family="'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif" font-size="150" font-weight="600" fill="#2d3748">
+  xCloud
+</text>
+</svg>

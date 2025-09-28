@@ -40,6 +40,25 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: 🔍 Validate links before deployment
+        uses: lycheeverse/lychee-action@v1.10.0
+        with:
+          args: |
+            --verbose
+            --no-progress
+            --max-concurrency 10
+            --timeout 25
+            --max-redirects 5
+            --retry-wait-time 2
+            --exclude-mail
+            --exclude-private
+            --exclude-file .lycheeignore
+            --user-agent "xCloud-Docs-Bot/1.0 (Pre-Deploy Validation)"
+            --format detailed
+            './build/**/*.html'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: false
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

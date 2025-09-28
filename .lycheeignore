@@ -1,0 +1,53 @@
+# Lychee ignore file
+# Links that should be ignored by the link checker
+
+# Localhost and development URLs
+http://localhost*
+https://localhost*
+127.0.0.1*
+0.0.0.0*
+
+# Social media links that often give false positives
+https://twitter.com/*
+https://x.com/*
+https://linkedin.com/in/*
+https://facebook.com/*
+
+# GitHub specific URLs that might be rate limited
+https://github.com/*/actions/runs/*
+https://github.com/*/commit/*
+https://github.com/*/compare/*
+
+# Common placeholders and examples
+example.com
+example.org
+example.net
+your-domain.com
+your-site.com
+
+# API endpoints that require authentication
+https://api.github.com/*
+https://api.openai.com/*
+
+# Documentation sites that might block automated requests
+https://docs.microsoft.com/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/*
+
+# Mailto links (already excluded via --exclude-mail)
+mailto:*
+
+# Temporary or dynamic URLs
+https://*/temp/*
+https://*/tmp/*
+
+# URLs with query parameters that might be unstable
+*?*utm_*
+*?*ref=*
+*?*source=*
+
+# Docker Hub URLs (often have issues with automated checking)
+https://hub.docker.com/*
+
+# Package managers
+https://www.npmjs.com/package/*
+https://pypi.org/project/*
