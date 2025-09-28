@@ -112,12 +112,12 @@ const config: Config = {
               to: '/docs/intro',
             },
             {
-              label: 'Setup',
-              to: '/docs/category/setup',
+              label: 'Guias',
+              to: '/docs/category/guias',
             },
             {
-              label: 'Referência',
-              to: '/docs/category/reference',
+              label: 'CLI',
+              to: '/docs/category/referência-da-cli',
             },
           ],
         },
