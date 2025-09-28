@@ -10,6 +10,11 @@ on:
     # Run weekly on Sundays at 00:00 UTC
     - cron: '0 0 * * 0'
 
+permissions:
+  contents: read
+  actions: read
+  checks: write
+
 jobs:
   link-checker:
     runs-on: ubuntu-latest
