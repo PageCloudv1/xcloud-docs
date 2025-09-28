@@ -239,7 +239,7 @@ Para questões sobre contribuições:
 
 **Obrigado por tornar a xCloud incrível! 🙏**
 
-[🤝 Contribuir](CONTRIBUTING.md) | [💬 Discord](https://discord.gg/xcloud) | [🌐 Website](https://xcloud.io)
+[🤝 Contribuir](../setup/development/como-contribuir.md) | [💬 Discord](https://discord.gg/xcloud) | [🌐 Website](https://xcloud.io)
 
 </div>
 

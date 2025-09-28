@@ -111,7 +111,7 @@ e este projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
 ## Como Contribuir
 
-Veja nosso [guia de contribuição](CONTRIBUTING.md) para saber como ajudar no desenvolvimento da xCloud Platform.
+Veja nosso [guia de contribuição](../setup/development/como-contribuir.md) para saber como ajudar no desenvolvimento da xCloud Platform.
 
 ## Links Úteis
 

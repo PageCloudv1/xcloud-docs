@@ -181,7 +181,7 @@ echo "your_secret_value" | gh secret set SECRET_NAME --org PageCloudv1 --visibil
 - **GitHub Secrets Documentation**: <https://docs.github.com/en/actions/security-guides/encrypted-secrets>
 - **GitHub CLI Manual**: <https://cli.github.com/manual/gh_secret>
 - **xCloud Architecture**: [arquitetura.md](../../architecture/arquitetura.md)
-- **Contributing Guide**: [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Contributing Guide**: [como-contribuir.md](../development/como-contribuir.md)
 
 ---
 

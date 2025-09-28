@@ -14,7 +14,7 @@
 - **📋 Padrões Go específicos** - Idioms, performance, segurança
 - **🐧🪟 Cross-platform expertise** - Windows/Linux compatibility
 - **🔧 CLI UX guidelines** - Usabilidade e experiência do usuário
-- **⚡ Performance targets** - <50ms startup, <15MB binário
+- **⚡ Performance targets** - &lt;50ms startup, &lt;15MB binário
 - **🔒 Security priorities** - Validação, sanitização, credenciais
 
 #### **3. 📊 Análises Automáticas Configuradas**

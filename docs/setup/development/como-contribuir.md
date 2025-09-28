@@ -26,12 +26,12 @@ Este projeto segue o [Código de Conduta](codigo-de-conduta.md). Ao participar, 
 Existem várias formas de contribuir com a xCloud Platform:
 
 ### 🐛 Reportando Bugs
-- Use o [template de bug report](.github/ISSUE_TEMPLATE/bug_report.md).
+- Abra uma nova issue no GitHub.
 - Forneça informações detalhadas sobre o ambiente.
 - Inclua passos para reproduzir o problema.
 
 ### ✨ Sugerindo Funcionalidades
-- Use o [template de feature request](.github/ISSUE_TEMPLATE/feature_request.md).
+- Abra uma nova issue no GitHub para sugestões de funcionalidades.
 - Descreva o caso de uso e os benefícios.
 - Considere a compatibilidade com a arquitetura existente.
 
@@ -329,7 +329,7 @@ xcloud publish
 
 ## 📄 Licença
 
-Ao contribuir com a xCloud Platform, você concorda que suas contribuições serão licenciadas sob a [Licença MIT](LICENSE).
+Ao contribuir com a xCloud Platform, você concorda que suas contribuições serão licenciadas sob a [Licença MIT](../../reference/licenca.md).
 
 ## 🙏 Agradecimentos
 

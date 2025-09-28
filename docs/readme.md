@@ -22,8 +22,7 @@ Documentação completa da **xCloud Platform** - Uma plataforma de computação 
 - **[Development](setup/development/)** - Ambiente de desenvolvimento
 
 ### **📖 Guias**
-- **[Deployment](guides/deployment/)** - Guias de deploy e publicação
-- **[Testing](guides/testing/)** - Testes locais e automação
+- **[Testing](guides-testing/)** - Testes locais e automação
 - **[Migration](guides/migration/)** - Guias de migração tecnológica
 
 ### **🏗️ Arquitetura**

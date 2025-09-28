@@ -88,8 +88,8 @@ O AI agora entende automaticamente:
 - **Performance targets** e optimization goals
 
 ### **4. 📊 Success Metrics Tracking:**
-- **Build Time**: <5 minutes para workflows
-- **Deployment Time**: <2 minutes para deployments
+- **Build Time**: &lt;5 minutos para workflows
+- **Deployment Time**: &lt;2 minutos para deployments
 - **Test Coverage**: >80% para todos repos
 - **Security Score**: Zero vulnerabilidades críticas
 - **Automation Goals**: Zero-touch deployments
