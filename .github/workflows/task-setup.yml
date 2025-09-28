@@ -1,0 +1,163 @@
+name: '✅ Task Setup and Refinement'
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  contents: write
+  pull-requests: write
+
+jobs:
+  setup-and-refine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Mint identity token'
+        id: 'mint_identity_token'
+        uses: 'actions/create-github-app-token@v1'
+        with:
+          app-id: '${{ vars.APP_ID }}'
+          private-key: '${{ secrets.APP_PRIVATE_KEY }}'
+
+      - name: 'Check for context files and refine issue'
+        uses: actions/github-script@v7
+        with:
+          github-token: '${{ steps.mint_identity_token.outputs.token }}'
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issue_number = context.issue.number;
+            const branchName = `bot/setup-context-files-for-${issue_number}`;
+            let filesToCreate = [];
+
+            // 1. Check for GEMINI.md
+            try {
+              await github.rest.repos.getContent({ owner, repo, path: 'GEMINI.md' });
+              console.log('GEMINI.md already exists.');
+            } catch (error) {
+              if (error.status === 404) {
+                console.log('GEMINI.md not found. Scheduling for creation.');
+                filesToCreate.push({
+                  path: 'GEMINI.md',
+                  content: `# Contexto para Gemini AI - ${repo}
+
+## 📝 Visão Geral do Projeto
+
+**${repo}** é o repositório de documentação para a xCloud Platform. Ele usa Docusaurus para gerar um site estático.
+
+## 🎯 Objetivos da Documentação
+
+- Fornecer guias claros e concisos.
+- Manter uma referência de API completa.
+- Documentar a arquitetura do sistema de forma compreensível.
+
+## 🤖 Papel da IA
+
+- **Revisão:** Analisar PRs de documentação para clareza, consistência e precisão técnica.
+- **Automação:** Ajudar a criar e refinar conteúdo, automatizar a triagem de issues e manter a qualidade geral.`
+                });
+              }
+            }
+
+            // 2. Check for copilot-instructions.md
+            try {
+              await github.rest.repos.getContent({ owner, repo, path: 'copilot-instructions.md' });
+              console.log('copilot-instructions.md already exists.');
+            } catch (error) {
+              if (error.status === 404) {
+                console.log('copilot-instructions.md not found. Scheduling for creation.');
+                filesToCreate.push({
+                  path: 'copilot-instructions.md',
+                  content: `# Instruções para o GitHub Copilot
+
+Este repositório contém a documentação da xCloud Platform. Siga estas diretrizes:
+
+- **Foco no Docusaurus:** As modificações devem ser compatíveis com a estrutura do Docusaurus (MDX, React components, etc.).
+- **Clareza é Prioridade:** A linguagem deve ser clara, objetiva e fácil de entender para um público técnico.
+- **Consistência:** Mantenha o tom e o estilo consistentes com o restante da documentação.`
+                });
+              }
+            }
+
+            // 3. If files are missing, create a branch and PR
+            if (filesToCreate.length > 0) {
+              const { data: mainBranch } = await github.rest.git.getRef({ owner, repo, ref: 'heads/main' });
+              
+              await github.rest.git.createRef({
+                owner,
+                repo,
+                ref: `refs/heads/${branchName}`,
+                sha: mainBranch.object.sha
+              });
+
+              for (const file of filesToCreate) {
+                await github.rest.repos.createOrUpdateFileContents({
+                  owner,
+                  repo,
+                  path: file.path,
+                  message: `feat: Create ${file.path}`,
+                  content: Buffer.from(file.content).toString('base64'),
+                  branch: branchName
+                });
+              }
+
+              const { data: pr } = await github.rest.pulls.create({
+                owner,
+                repo,
+                title: 'feat: Add AI context files',
+                head: branchName,
+                base: 'main',
+                body: 'Este PR adiciona os arquivos de contexto `GEMINI.md` e `copilot-instructions.md` para melhorar a performance dos assistentes de IA neste repositório.'
+              });
+
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issue_number,
+                body: `🤖 Arquivos de contexto de IA não encontrados. Criei o PR #${pr.number} para adicioná-los. A revisão desta issue continuará.`
+              });
+            }
+
+      - name: 'Refine Issue with Gemini'
+        uses: 'google-github-actions/run-gemini-cli@v0'
+        with:
+          github_token: '${{ steps.mint_identity_token.outputs.token }}'
+          gemini_api_key: '${{ secrets.GEMINI_API_KEY }}'
+          settings: |-
+            {
+              "mcpServers": { "github": { "command": "docker", "args": ["run", "-i", "--rm", "-e", "GITHUB_PERSONAL_ACCESS_TOKEN", "ghcr.io/github/github-mcp-server"], "includeTools": ["get_issue", "add_issue_comment"], "env": { "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}" } } }
+            }
+          prompt: |-
+            ## Your Role: Task Refinement AI
+
+            Your job is to analyze a newly created GitHub issue and refine it by posting a helpful comment.
+
+            ## Issue to Analyze:
+            - **Repository:** ${{ github.repository }}
+            - **Issue Number:** ${{ github.event.issue.number }}
+
+            ## Workflow:
+
+            1.  **Read the Issue:**
+                - Use `mcp__github__get_issue` to get the title and body of issue #${{ github.event.issue.number }}.
+
+            2.  **Analyze and Plan:**
+                - Carefully read the user's request.
+                - Formulate a clear, actionable checklist of the steps required to solve the issue.
+                - If the request is unclear, your first checklist item should be to ask for specific clarification.
+
+            3.  **Post the Refinement Comment:**
+                - Use `mcp__github__add_issue_comment` to post a comment on issue #${{ github.event.issue.number }}.
+                - The comment **MUST** follow this template:
+
+                ```markdown
+                🤖 Olá! Analisei esta tarefa e aqui está um plano de ação sugerido para resolvê-la:
+
+                ### Plano de Ação
+                - [ ] Passo 1: Descrição clara da primeira ação.
+                - [ ] Passo 2: Descrição clara da segunda ação.
+                - [ ] ...
+
+                Se este plano estiver correto, a automação pode prosseguir. Se precisar de ajustes, por favor, me avise.
+                ```
