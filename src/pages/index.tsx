@@ -37,7 +37,7 @@ const navigationCards: NavigationCard[] = [
     title: 'Tutoriais',
     description: 'Siga tutoriais passo a passo para implementar funcionalidades específicas.',
     icon: '📖',
-    link: '/docs/category/guides',
+    link: '/docs/category/guias',
   },
 ];
 
