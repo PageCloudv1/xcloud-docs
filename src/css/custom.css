@@ -4,27 +4,103 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* xCloud Platform Brand Colors */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary blue theme for xCloud Platform */
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  
+  /* Code styling */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.1);
+  
+  /* Custom xCloud accent colors */
+  --xcloud-accent: #0ea5e9;
+  --xcloud-success: #10b981;
+  --xcloud-warning: #f59e0b;
+  --xcloud-danger: #ef4444;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode palette - lighter blues for better readability */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+  --docusaurus-highlighted-code-line-bg: rgba(96, 165, 250, 0.3);
+  
+  /* Custom dark mode accent colors */
+  --xcloud-accent: #38bdf8;
+  --xcloud-success: #34d399;
+  --xcloud-warning: #fbbf24;
+  --xcloud-danger: #f87171;
+}
+
+/* xCloud Platform Custom Styling */
+
+/* Enhanced hero section styling */
+.hero--primary {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+}
+
+[data-theme='dark'] .hero--primary {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darker) 0%, var(--ifm-color-primary) 100%);
+}
+
+/* Improve button styling */
+.button--primary {
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  transition: all 0.2s ease;
+}
+
+.button--primary:hover {
+  background: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+[data-theme='dark'] .button--primary:hover {
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+}
+
+/* Enhanced navigation styling */
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  backdrop-filter: blur(10px);
+}
+
+/* Card hover effects for navigation cards */
+.card:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+/* Code block improvements */
+.prism-code {
+  border-radius: 8px;
+}
+
+/* Link styling improvements */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Footer styling */
+.footer--dark {
+  background: linear-gradient(180deg, var(--ifm-footer-background-color) 0%, rgba(37, 99, 235, 0.05) 100%);
 }
