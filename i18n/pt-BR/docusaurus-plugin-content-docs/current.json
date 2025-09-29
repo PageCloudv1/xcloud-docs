@@ -1,0 +1,66 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Introdução": {
+    "message": "Introdução",
+    "description": "The label for category Introdução in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guias": {
+    "message": "Guias",
+    "description": "The label for category Guias in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Migração": {
+    "message": "Migração",
+    "description": "The label for category Migração in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Deploy": {
+    "message": "Deploy",
+    "description": "The label for category Deploy in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Testing": {
+    "message": "Testing",
+    "description": "The label for category Testing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Setup e Configuração": {
+    "message": "Setup e Configuração",
+    "description": "The label for category Setup e Configuração in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Desenvolvimento": {
+    "message": "Desenvolvimento",
+    "description": "The label for category Desenvolvimento in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GitHub Secrets": {
+    "message": "GitHub Secrets",
+    "description": "The label for category GitHub Secrets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Workflows": {
+    "message": "Workflows",
+    "description": "The label for category Workflows in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Arquitetura": {
+    "message": "Arquitetura",
+    "description": "The label for category Arquitetura in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Referência da CLI": {
+    "message": "Referência da CLI",
+    "description": "The label for category Referência da CLI in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.API Reference": {
+    "message": "API Reference",
+    "description": "The label for category API Reference in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.API Reference.link.generated-index.description": {
+    "message": "Referência completa da API da xCloud Platform",
+    "description": "The generated-index page description for category API Reference in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Referência do Projeto": {
+    "message": "Referência do Projeto",
+    "description": "The label for category Referência do Projeto in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Referência do Projeto.link.generated-index.description": {
+    "message": "Informações sobre o projeto, contributors, changelog e licença",
+    "description": "The generated-index page description for category Referência do Projeto in sidebar tutorialSidebar"
+  }
+}
