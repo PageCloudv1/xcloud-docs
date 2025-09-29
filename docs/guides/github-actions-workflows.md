@@ -342,7 +342,11 @@ permissions:
 ## 🎯 Implementação em Novos Projetos
 
 ### 1. Copiar Workflows
+> **Nota:** Certifique-se de que o repositório `xcloud-bot` está disponível localmente. Caso não esteja, clone-o primeiro:
+
 ```bash
+# Clonar o repositório de referência (se ainda não estiver presente)
+git clone https://github.com/xcloud-platform/xcloud-bot.git
 # No novo projeto
 mkdir -p .github/workflows
 cp xcloud-bot/.github/workflows/* .github/workflows/
