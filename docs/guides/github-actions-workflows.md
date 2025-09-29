@@ -393,7 +393,7 @@ on:
 #### ❌ Build falha
 ```bash
 # Verificar Node.js version
-node-version: ${{ env.NODE_VERSION }}
+node-version: ${{ env.node-version }}
 
 # Verificar scripts package.json
 npm run build
