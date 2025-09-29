@@ -425,7 +425,7 @@ env:
 
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Workflow Syntax](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
-- [xCloud Bot - Implementação de Referência](../../../xcloud-bot/.github/workflows/)
+- [xCloud Bot - Implementação de Referência](https://github.com/PageCloudv1/xcloud-bot/tree/main/.github/workflows/)
 
 ---
 
