@@ -1,0 +1,96 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 766px) {
+  .buttons {
+    flex-direction: column;
+  }
+  
+  .buttons .button {
+    margin: 0 !important;
+  }
+}
+
+.navigation {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-surface-color);
+}
+
+.navigationCard {
+  margin-bottom: 2rem;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.cardLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  background: var(--ifm-card-background-color);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.cardIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cardContent {
+  flex: 1;
+  text-align: center;
+}
+
+.cardTitle {
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.cardDescription {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
