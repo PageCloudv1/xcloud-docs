@@ -396,10 +396,10 @@ on:
 
 #### ❌ Build falha
 ```bash
-# Verificar Node.js version
-node-version: ${{ env.node-version }}
-
-# Verificar scripts package.json
+# 1. Verifique a versão do Node.js no seu arquivo de workflow. Exemplo:
+#    node-version: '20'
+#
+# 2. Verifique se o script 'build' no package.json funciona localmente:
 npm run build
 ```
 
