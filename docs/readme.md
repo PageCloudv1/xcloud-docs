@@ -135,6 +135,52 @@ Siga o guia: [Guia para Desenvolvedores](setup/development/guia-do-desenvolvedor
 - Ver estrutura → [Project Structure](architecture/estrutura-do-projeto.md)
 - Componentes → [Components Architecture](architecture/arquitetura-de-componentes.md)
 
+---
+
+## 📝 Log de Atualizações da Documentação
+
+**⚠️ IMPORTANTE:** Este log registra todas as mudanças significativas na documentação centralizada.
+
+### Histórico de Atualizações
+
+- **01/10/2025** - Issue #31 atualizada - docs centralizadas como prioridade máxima
+- **01/10/2025** - Estrutura base do Docusaurus verificada e funcionando
+- **01/10/2025** - Página inicial (intro.md) atualizada com conteúdo específico da xCloud
+- **01/10/2025** - Build e deploy automatizado via GitHub Actions confirmado funcionando
+- **01/10/2025** - Documentação completa com 42+ arquivos markdown organizados
+- **01/10/2025** - API Reference, CLI Reference e guias de arquitetura verificados
+
+### Status das Fases
+
+#### ✅ Fase 1: Estrutura Base (COMPLETO)
+- [x] Setup Docusaurus - **Implementado e funcionando**
+- [x] Arquitetura da documentação - **Estrutura organizada em categorias**
+- [x] Templates padrão para docs - **Sidebars e navegação configurados**
+
+#### ✅ Fase 2: Conteúdo Core (COMPLETO)
+- [x] Getting Started Guide - **Guia de primeiros passos completo**
+- [x] API Documentation - **Referência completa da API REST**
+- [x] Component Library docs - **Arquitetura de componentes documentada**
+
+#### ✅ Fase 3: Automação (COMPLETO)
+- [x] Auto-generation de docs via CI - **Workflow deploy-docs.yml ativo**
+- [x] Deploy automatizado - **GitHub Pages deployment configurado**
+- [x] Search functionality - **Busca integrada do Docusaurus ativa**
+
+### 🔗 Links Importantes
+
+- **Site de Documentação:** https://pagecloudv1.github.io/xcloud-docs/
+- **Repositório:** https://github.com/PageCloudv1/xcloud-docs
+- **CI/CD Status:** [![Deploy](https://github.com/PageCloudv1/xcloud-docs/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/PageCloudv1/xcloud-docs/actions/workflows/deploy-docs.yml)
+
+### 📋 Próximas Melhorias
+
+- [ ] Adicionar mais exemplos práticos em cada guia
+- [ ] Criar vídeos tutoriais para principais funcionalidades
+- [ ] Expandir seção de troubleshooting
+- [ ] Adicionar mais diagramas de arquitetura interativos
+- [ ] Melhorar documentação de APIs de cada repositório do ecossistema
+
 ## 🎯 **Suporte**
 
 - **Issues**: [GitHub Issues](https://github.com/PageCloudv1/xcloud-docs/issues)
