@@ -6,7 +6,9 @@
 
 [![Status](https://img.shields.io/badge/Status-Active-success)](https://github.com/PageCloudv1/xcloud-docs)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
-[![CI/CD](https://github.com/PageCloudv1/xcloud-docs/actions/workflows/ci.yml/badge.svg)](https://github.com/PageCloudv1/xcloud-docs/actions/workflows/ci.yml)
+[![Deploy](https://github.com/PageCloudv1/xcloud-docs/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/PageCloudv1/xcloud-docs/actions/workflows/deploy-docs.yml)
+
+**🌐 [Acesse a Documentação Completa](https://pagecloudv1.github.io/xcloud-docs/)**
 
 </div>
 
@@ -30,6 +32,26 @@ A xCloud Platform é composta por um conjunto de repositórios projetados para t
 | **[xcloud-containers](https://github.com/PageCloudv1/xcloud-containers)** | Configurações de contêineres Podman para o ambiente de desenvolvimento. |
 
 ---
+
+## 📚 About This Documentation
+
+This repository contains the complete documentation for the xCloud Platform ecosystem. The documentation is built with [Docusaurus](https://docusaurus.io/) and automatically deployed to GitHub Pages.
+
+### 🎯 What's Included
+
+- **Getting Started Guides** - Quick start tutorials and setup instructions
+- **API Reference** - Complete REST API documentation
+- **CLI Reference** - Command-line interface documentation
+- **Architecture Guides** - System design and component architecture
+- **Developer Guides** - In-depth tutorials and best practices
+- **Reference Materials** - Changelogs, security policies, and more
+
+### 🌐 Live Documentation
+
+Visit the live documentation at: **[https://pagecloudv1.github.io/xcloud-docs/](https://pagecloudv1.github.io/xcloud-docs/)**
+
+---
+
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
@@ -58,6 +80,12 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
+The documentation is automatically deployed to GitHub Pages when changes are pushed to the `main` branch via the [deploy-docs.yml](.github/workflows/deploy-docs.yml) workflow.
+
+### Manual Deployment
+
+If you need to deploy manually:
+
 Using SSH:
 
 ```bash
@@ -70,4 +98,12 @@ Not using SSH:
 GIT_USER=<Your GitHub username> yarn deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+---
+
+## 📝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](docs/setup/development/como-contribuir.md) for details on how to get started.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
